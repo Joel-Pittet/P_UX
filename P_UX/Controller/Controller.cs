@@ -8,14 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace P_UX.Controller
 {
     public class Controller
     {
 
         //Création de la vue et du modele pour les lier au controller dans le constructeur
-        private View _view;
+        private MainView _mainView;
         private Model.Model _model;
+        private TicketsSelection _ticketsSelection;
 
         //Gère l'internationalisation
         ResourceManager resManagerTraduction;
@@ -25,11 +27,13 @@ namespace P_UX.Controller
         /// </summary>
         /// <param name="view"></param>
         /// <param name="model"></param>
-        public Controller(View view, Model.Model model)
+        public Controller(MainView view, TicketsSelection ticketsSelection, Model.Model model)
         {
-            _view = view;
+            _mainView = view;
             _model = model;
-            _view.Controller = this;
+            _ticketsSelection = ticketsSelection;
+            _ticketsSelection.Controller = this;
+            _mainView.Controller = this;
             _model.Controller = this;
         }
 
@@ -63,6 +67,27 @@ namespace P_UX.Controller
             }
 
             return resManagerTraduction;
+        }
+
+        /// <summary>
+        /// Affiche une Form et en cache une autre
+        /// </summary>
+        /// <param name="formToHide">Form à cacher</param>
+        /// <param name="formToShow">Form à afficher</param>
+        public void ChangeForm(Form formToHide, Form formToShow)
+        {
+            Form viewToShow = formToShow;
+
+            formToHide.Hide();
+            viewToShow.Show();
+        }
+
+        /// <summary>
+        /// Affiche la vue de selection des tickets
+        /// </summary>
+        public void ShowTicketsSelection()
+        { 
+            ChangeForm(_mainView, _ticketsSelection);
         }
     }
 }

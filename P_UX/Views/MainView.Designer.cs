@@ -1,6 +1,6 @@
 ﻿namespace P_UX
 {
-    partial class View
+    partial class MainView
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainView));
             this.button2 = new System.Windows.Forms.Button();
             this.btnBuyTickets = new System.Windows.Forms.Button();
             this.btnPassNavigo = new System.Windows.Forms.Button();
@@ -61,6 +61,7 @@
             this.btnBuyTickets.Text = "Acheter des billets";
             this.btnBuyTickets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuyTickets.UseVisualStyleBackColor = true;
+            this.btnBuyTickets.Click += new System.EventHandler(this.btnBuyTickets_Click);
             // 
             // btnPassNavigo
             // 
@@ -85,6 +86,7 @@
             this.btnITA.Size = new System.Drawing.Size(150, 88);
             this.btnITA.TabIndex = 10;
             this.btnITA.UseVisualStyleBackColor = true;
+            this.btnITA.Click += new System.EventHandler(this.btnITA_Click);
             // 
             // btnDEU
             // 
@@ -95,6 +97,7 @@
             this.btnDEU.Size = new System.Drawing.Size(150, 88);
             this.btnDEU.TabIndex = 11;
             this.btnDEU.UseVisualStyleBackColor = true;
+            this.btnDEU.Click += new System.EventHandler(this.btnDEU_Click);
             // 
             // btnESP
             // 
@@ -105,6 +108,7 @@
             this.btnESP.Size = new System.Drawing.Size(150, 88);
             this.btnESP.TabIndex = 12;
             this.btnESP.UseVisualStyleBackColor = true;
+            this.btnESP.Click += new System.EventHandler(this.btnESP_Click);
             // 
             // btnANG
             // 

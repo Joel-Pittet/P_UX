@@ -11,6 +11,7 @@ D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Pr
 D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.csproj.CoreCompileInputs.cache
 D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.exe
 D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.pdb
-D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.View.resources
 D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.TicketsSelection.resources
 D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Resources.English.resources
+D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.MainView.resources
+D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Controller.TypeOfRate.resources

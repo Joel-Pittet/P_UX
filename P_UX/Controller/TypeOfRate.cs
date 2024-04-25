@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P_UX
+namespace P_UX.Controller
 {
-    public partial class TicketsSelection : Form
+    public partial class TypeOfRate : Form
     {
-        public TicketsSelection()
+        public TypeOfRate()
         {
             InitializeComponent();
         }
-
-        /// <summary>
-        /// Controller par défaut
-        /// </summary>
-        public Controller.Controller Controller { get; set; }
     }
 }

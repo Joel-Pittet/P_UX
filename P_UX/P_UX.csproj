@@ -47,7 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Controller\TypeOfRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\TypeOfRate.Designer.cs">
+      <DependentUpon>TypeOfRate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Model.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\French.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -73,11 +84,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Spanish.resx</DependentUpon>
     </Compile>
-    <Compile Include="Views\View.cs">
+    <Compile Include="Views\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\View.Designer.cs">
-      <DependentUpon>View.cs</DependentUpon>
+    <Compile Include="Views\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,16 +98,20 @@
     <Compile Include="Views\TicketsSelection.Designer.cs">
       <DependentUpon>TicketsSelection.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controller\TypeOfRate.resx">
+      <DependentUpon>TypeOfRate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\English.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>English.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\View.resx">
-      <DependentUpon>View.cs</DependentUpon>
+    <EmbeddedResource Include="Views\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\French.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ticket_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\flag_Italy.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

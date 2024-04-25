@@ -18,14 +18,17 @@ namespace P_UX
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //création de la vue
-            View aView = new View();
+            //création de la vue principale
+            MainView aView = new MainView();
+
+            //Selection de billet
+            TicketsSelection aticketsSelection = new TicketsSelection();
 
             //Création du modele
             Model.Model aModel = new Model.Model();
 
             //Création du controller
-            Controller.Controller aController = new Controller.Controller(aView, aModel);
+            Controller.Controller aController = new Controller.Controller(aView, aticketsSelection, aModel);
 
             Application.Run(aView);
         }
