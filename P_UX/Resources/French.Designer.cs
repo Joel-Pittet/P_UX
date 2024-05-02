@@ -70,11 +70,92 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Annuler.
+        /// </summary>
+        internal static string btnCancel {
+            get {
+                return ResourceManager.GetString("btnCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Recharger Pass Navigo.
         /// </summary>
         internal static string btnPassNavigo {
             get {
                 return ResourceManager.GetString("btnPassNavigo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Retour.
+        /// </summary>
+        internal static string btnReturn {
+            get {
+                return ResourceManager.GetString("btnReturn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Billet Aéroport                                   Roissy-Charles de Gaulles, Orly.
+        /// </summary>
+        internal static string btnTicketAirport {
+            get {
+                return ResourceManager.GetString("btnTicketAirport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Billet Disneyland Paris                     Valide depuis cette station.
+        /// </summary>
+        internal static string btnTicketDisney {
+            get {
+                return ResourceManager.GetString("btnTicketDisney", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Billet Mobilis                                       1 jour sans accès à l&apos;aéroport.
+        /// </summary>
+        internal static string btnTicketMobilis {
+            get {
+                return ResourceManager.GetString("btnTicketMobilis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Billet pour Paris Region                   Valide depuis cette station.
+        /// </summary>
+        internal static string btnTicketParisRegion {
+            get {
+                return ResourceManager.GetString("btnTicketParisRegion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Billet Paris Visite                                1,2,3 ou 5 jours.
+        /// </summary>
+        internal static string btnTicketParisVisit {
+            get {
+                return ResourceManager.GetString("btnTicketParisVisit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Billet t+                                               Metro, Bus, Tram, RER dans Paris.
+        /// </summary>
+        internal static string btnTicketT {
+            get {
+                return ResourceManager.GetString("btnTicketT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Faites votre choix.
+        /// </summary>
+        internal static string lblTitleTicketsSelection {
+            get {
+                return ResourceManager.GetString("lblTitleTicketsSelection", resourceCulture);
             }
         }
     }

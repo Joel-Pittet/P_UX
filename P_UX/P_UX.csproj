@@ -47,10 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Controller.cs" />
-    <Compile Include="Controller\TypeOfRate.cs">
+    <Compile Include="Views\TypeOfRate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controller\TypeOfRate.Designer.cs">
+    <Compile Include="Views\TypeOfRate.Designer.cs">
       <DependentUpon>TypeOfRate.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Model.cs" />
@@ -98,7 +98,7 @@
     <Compile Include="Views\TicketsSelection.Designer.cs">
       <DependentUpon>TicketsSelection.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Controller\TypeOfRate.resx">
+    <EmbeddedResource Include="Views\TypeOfRate.resx">
       <DependentUpon>TypeOfRate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\English.resx">

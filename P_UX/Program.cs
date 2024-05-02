@@ -30,6 +30,7 @@ namespace P_UX
             //Création du controller
             Controller.Controller aController = new Controller.Controller(aView, aticketsSelection, aModel);
 
+            //Lance la vue principale
             Application.Run(aView);
         }
     }

@@ -21,11 +21,6 @@ namespace P_UX
         enum Language { FRA, ANG, ESP, DEU, ITA }
 
         /// <summary>
-        /// Langue courante du programme
-        /// </summary>
-        Language currentLanguage;
-
-        /// <summary>
         /// Ressource Manager pour gérer les langues
         /// </summary>
         ResourceManager _resManagerTraduction;
@@ -43,6 +38,8 @@ namespace P_UX
             InitializeComponent();
         }
 
+        #region Footer
+
         #region Boutons Langues
 
         /// <summary>
@@ -52,14 +49,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnFRA_Click(object sender, EventArgs e)
         {
-            //Change la langue courante
-            currentLanguage = Language.FRA;
-
-            //Donne la langue au controller et récupère le ressourceManager associé
-            _resManagerTraduction = Controller.NewCurrentLanguage(Convert.ToInt32(currentLanguage));
-
-            //Met à jour la langue dans l'interface
-            UpdateLanguage(_resManagerTraduction);
+            UpdateCurrentLanguage(Language.FRA);
         }
 
         /// <summary>
@@ -69,14 +59,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnANG_Click(object sender, EventArgs e)
         {
-            //Change la langue courante
-            currentLanguage = Language.ANG;
-
-            //Donne la langue au controller et récupère le ressourceManager associé
-            _resManagerTraduction = Controller.NewCurrentLanguage(Convert.ToInt32(currentLanguage));
-
-            //Met à jour la langue dans l'interface
-            UpdateLanguage(_resManagerTraduction);
+            UpdateCurrentLanguage(Language.ANG);
         }
 
         /// <summary>
@@ -86,14 +69,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnESP_Click(object sender, EventArgs e)
         {
-            //Change la langue courante
-            currentLanguage = Language.ESP;
-
-            //Donne la langue au controller et récupère le ressourceManager associé
-            _resManagerTraduction = Controller.NewCurrentLanguage(Convert.ToInt32(currentLanguage));
-
-            //Met à jour la langue dans l'interface
-            UpdateLanguage(_resManagerTraduction);
+            UpdateCurrentLanguage(Language.ESP);
         }
 
         /// <summary>
@@ -103,14 +79,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnDEU_Click(object sender, EventArgs e)
         {
-            //Change la langue courante
-            currentLanguage = Language.DEU;
-
-            //Donne la langue au controller et récupère le ressourceManager associé
-            _resManagerTraduction = Controller.NewCurrentLanguage(Convert.ToInt32(currentLanguage));
-
-            //Met à jour la langue dans l'interface
-            UpdateLanguage(_resManagerTraduction);
+            UpdateCurrentLanguage(Language.DEU);
         }
 
         /// <summary>
@@ -120,14 +89,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnITA_Click(object sender, EventArgs e)
         {
-            //Change la langue courante
-            currentLanguage = Language.ITA;
-
-            //Donne la langue au controller et récupère le ressourceManager associé
-            _resManagerTraduction = Controller.NewCurrentLanguage(Convert.ToInt32(currentLanguage));
-
-            //Met à jour la langue dans l'interface
-            UpdateLanguage(_resManagerTraduction);
+            UpdateCurrentLanguage(Language.ITA);
         }
 
         #endregion
@@ -150,6 +112,21 @@ namespace P_UX
         }
 
         /// <summary>
+        /// Met à jour la langue courante pour tous les controls
+        /// </summary>
+        /// <param name="lang"></param>
+        private void UpdateCurrentLanguage(Language lang)
+        {
+            //Donne la langue au controller et récupère le ressourceManager associé
+            _resManagerTraduction = Controller.NewCurrentLanguage(Convert.ToInt32(lang));
+
+            //Met à jour la langue dans l'interface
+            UpdateLanguage(_resManagerTraduction);
+        }
+
+        #endregion
+
+        /// <summary>
         /// Redirection vers choix des billets
         /// </summary>
         /// <param name="sender"></param>
@@ -158,5 +135,7 @@ namespace P_UX
         {
             Controller.ShowTicketsSelection();
         }
+
+        
     }
 }

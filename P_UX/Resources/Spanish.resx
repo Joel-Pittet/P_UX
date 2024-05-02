@@ -120,7 +120,34 @@
   <data name="btnBuyTickets" xml:space="preserve">
     <value>Comprar billetes</value>
   </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Anular</value>
+  </data>
   <data name="btnPassNavigo" xml:space="preserve">
     <value>Recargar Navigo Pass</value>
+  </data>
+  <data name="btnReturn" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
+  <data name="btnTicketAirport" xml:space="preserve">
+    <value>    Boleto de aeropuerto                        Roissy-Charles de Gaulles, Orly</value>
+  </data>
+  <data name="btnTicketDisney" xml:space="preserve">
+    <value>    Boleto Disneyland Paris                     Válido desde esta estación</value>
+  </data>
+  <data name="btnTicketMobilis" xml:space="preserve">
+    <value>    Boleto Mobilis                                      1 día sin acceso al aeropuerto</value>
+  </data>
+  <data name="btnTicketParisRegion" xml:space="preserve">
+    <value>    Boleto para Paris Region                   Válido desde esta estación</value>
+  </data>
+  <data name="btnTicketParisVisit" xml:space="preserve">
+    <value>    Boleto Paris Visita                                1,2,3 o 5 días</value>
+  </data>
+  <data name="btnTicketT" xml:space="preserve">
+    <value>    Boleto t+                                               Metro, Bus, Tram, RER en Paris</value>
+  </data>
+  <data name="lblTitleTicketsSelection" xml:space="preserve">
+    <value>Hace su elección</value>
   </data>
 </root>

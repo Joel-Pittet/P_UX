@@ -70,11 +70,92 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abbrechen.
+        /// </summary>
+        internal static string btnCancel {
+            get {
+                return ResourceManager.GetString("btnCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Navigo Pass aufladen.
         /// </summary>
         internal static string btnPassNavigo {
             get {
                 return ResourceManager.GetString("btnPassNavigo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rückgabe.
+        /// </summary>
+        internal static string btnReturn {
+            get {
+                return ResourceManager.GetString("btnReturn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Fahrkarte Fughafen                        Roissy-Charles de Gaulles, Orly.
+        /// </summary>
+        internal static string btnTicketAirport {
+            get {
+                return ResourceManager.GetString("btnTicketAirport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Fahrkarte Disneyland Paris            Gültig ab dieser Haltestelle.
+        /// </summary>
+        internal static string btnTicketDisney {
+            get {
+                return ResourceManager.GetString("btnTicketDisney", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Fahrkarte Mobilis                             1 Tag ohne Zugang zum Flughafen.
+        /// </summary>
+        internal static string btnTicketMobilis {
+            get {
+                return ResourceManager.GetString("btnTicketMobilis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Fahrkarte für Paris Region              Gültig ab dieser Haltestelle.
+        /// </summary>
+        internal static string btnTicketParisRegion {
+            get {
+                return ResourceManager.GetString("btnTicketParisRegion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Fahrkarte Paris Besuch                   1,2,3 oder 5 Tage.
+        /// </summary>
+        internal static string btnTicketParisVisit {
+            get {
+                return ResourceManager.GetString("btnTicketParisVisit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à     Fahrkarte t+                                      U-Bahn, Bus, Straßenbahn, RER in Paris.
+        /// </summary>
+        internal static string btnTicketT {
+            get {
+                return ResourceManager.GetString("btnTicketT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Treffen Sie Ihre Entscheidung.
+        /// </summary>
+        internal static string lblTitleTicketsSelection {
+            get {
+                return ResourceManager.GetString("lblTitleTicketsSelection", resourceCulture);
             }
         }
     }

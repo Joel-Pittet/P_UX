@@ -83,11 +83,29 @@ namespace P_UX.Controller
         }
 
         /// <summary>
+        /// Affiche la vue principale
+        /// </summary>
+        public void ShowMainView()
+        {
+            ChangeForm(_ticketsSelection, _mainView);
+        }
+
+
+        /// <summary>
         /// Affiche la vue de selection des tickets
         /// </summary>
         public void ShowTicketsSelection()
         { 
             ChangeForm(_mainView, _ticketsSelection);
+        }
+
+        /// <summary>
+        /// Affiche la vue principale et ferme la vue en cours
+        /// </summary>
+        /// <param name="actualForm">Forme actuelle au moment du clic sur le bouton Annuler</param>
+        public void CancelButton(Form actualForm)
+        {
+            ChangeForm(actualForm, _mainView);
         }
     }
 }
