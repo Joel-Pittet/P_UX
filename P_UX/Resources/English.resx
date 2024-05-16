@@ -123,6 +123,12 @@
   <data name="btnCancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="btnFullFare" xml:space="preserve">
+    <value>Full fare</value>
+  </data>
+  <data name="btnHalfFare" xml:space="preserve">
+    <value>Half fare</value>
+  </data>
   <data name="btnPassNavigo" xml:space="preserve">
     <value>Reload Pass Navigo</value>
   </data>
@@ -133,7 +139,7 @@
     <value>    Ticket Airport                                   Roissy-Charles de Gaulles, Orly</value>
   </data>
   <data name="btnTicketDisney" xml:space="preserve">
-    <value>    Ticket Disneyland Paris                 Valid from this station</value>
+    <value>    Ticket Disneyland Paris                Valid from this station</value>
   </data>
   <data name="btnTicketMobilis" xml:space="preserve">
     <value>    Ticket Mobilis                                   1 day without airport access</value>

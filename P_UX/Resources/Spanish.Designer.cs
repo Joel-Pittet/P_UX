@@ -79,6 +79,24 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pleno tarifa.
+        /// </summary>
+        internal static string btnFullFare {
+            get {
+                return ResourceManager.GetString("btnFullFare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tarifa reducido.
+        /// </summary>
+        internal static string btnHalfFare {
+            get {
+                return ResourceManager.GetString("btnHalfFare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Recargar Navigo Pass.
         /// </summary>
         internal static string btnPassNavigo {
@@ -97,7 +115,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Boleto de aeropuerto                        Roissy-Charles de Gaulles, Orly.
+        ///   Recherche une chaîne localisée semblable à     Billete de aeropuerto                        Roissy-Charles de Gaulles, Orly.
         /// </summary>
         internal static string btnTicketAirport {
             get {
@@ -106,7 +124,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Boleto Disneyland Paris                     Válido desde esta estación.
+        ///   Recherche une chaîne localisée semblable à     Billete Disneyland Paris                     Válido desde esta estación.
         /// </summary>
         internal static string btnTicketDisney {
             get {
@@ -115,7 +133,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Boleto Mobilis                                      1 día sin acceso al aeropuerto.
+        ///   Recherche une chaîne localisée semblable à     Billete Mobilis                                    1 día sin acceso al aeropuerto.
         /// </summary>
         internal static string btnTicketMobilis {
             get {
@@ -124,7 +142,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Boleto para Paris Region                   Válido desde esta estación.
+        ///   Recherche une chaîne localisée semblable à     Billete para Paris Region                   Válido desde esta estación.
         /// </summary>
         internal static string btnTicketParisRegion {
             get {
@@ -133,7 +151,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Boleto Paris Visita                                1,2,3 o 5 días.
+        ///   Recherche une chaîne localisée semblable à     Billete Paris Visita                              1,2,3 o 5 días.
         /// </summary>
         internal static string btnTicketParisVisit {
             get {
@@ -142,7 +160,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Boleto t+                                               Metro, Bus, Tram, RER en Paris.
+        ///   Recherche une chaîne localisée semblable à     Billete t+                                             Metro, Bus, Tram, RER en Paris.
         /// </summary>
         internal static string btnTicketT {
             get {
@@ -151,7 +169,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Hace su elección.
+        ///   Recherche une chaîne localisée semblable à Haga su elección.
         /// </summary>
         internal static string lblTitleTicketsSelection {
             get {

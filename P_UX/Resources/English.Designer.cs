@@ -79,6 +79,24 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Full fare.
+        /// </summary>
+        internal static string btnFullFare {
+            get {
+                return ResourceManager.GetString("btnFullFare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Half fare.
+        /// </summary>
+        internal static string btnHalfFare {
+            get {
+                return ResourceManager.GetString("btnHalfFare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Reload Pass Navigo.
         /// </summary>
         internal static string btnPassNavigo {
@@ -106,7 +124,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Ticket Disneyland Paris                 Valid from this station.
+        ///   Recherche une chaîne localisée semblable à     Ticket Disneyland Paris                Valid from this station.
         /// </summary>
         internal static string btnTicketDisney {
             get {

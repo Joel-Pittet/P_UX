@@ -123,6 +123,12 @@
   <data name="btnCancel" xml:space="preserve">
     <value>Abbrechen</value>
   </data>
+  <data name="btnFullFare" xml:space="preserve">
+    <value>Voller Tarif</value>
+  </data>
+  <data name="btnHalfFare" xml:space="preserve">
+    <value>Reduzierter Tarif</value>
+  </data>
   <data name="btnPassNavigo" xml:space="preserve">
     <value>Navigo Pass aufladen</value>
   </data>

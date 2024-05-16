@@ -132,7 +132,7 @@
             this.btnFRA.UseVisualStyleBackColor = true;
             this.btnFRA.Click += new System.EventHandler(this.btnFRA_Click);
             // 
-            // View
+            // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -145,8 +145,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBuyTickets);
             this.Controls.Add(this.btnPassNavigo);
-            this.Name = "View";
+            this.Name = "MainView";
             this.Text = "ChoixNavigo/Billet";
+            this.Activated += new System.EventHandler(this.MainView_Activated);
             this.ResumeLayout(false);
 
         }

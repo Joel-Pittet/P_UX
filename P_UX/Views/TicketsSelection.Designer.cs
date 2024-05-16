@@ -66,6 +66,7 @@
     " dans Paris";
             this.btnTicketT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicketT.UseVisualStyleBackColor = true;
+            this.btnTicketT.Click += new System.EventHandler(this.btnTicketT_Click);
             // 
             // btnITA
             // 
@@ -154,6 +155,7 @@
             this.btnTicketParisRegion.Text = "    Billet pour Paris Region                   Valide depuis cette station";
             this.btnTicketParisRegion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicketParisRegion.UseVisualStyleBackColor = true;
+            this.btnTicketParisRegion.Click += new System.EventHandler(this.btnTicketParisRegion_Click);
             // 
             // btnTicketDisney
             // 
@@ -165,6 +167,7 @@
             this.btnTicketDisney.Text = "    Billet Disneyland Paris                     Valide depuis cette station";
             this.btnTicketDisney.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicketDisney.UseVisualStyleBackColor = true;
+            this.btnTicketDisney.Click += new System.EventHandler(this.btnTicketDisney_Click);
             // 
             // btnTicketParisVisit
             // 
@@ -176,6 +179,7 @@
             this.btnTicketParisVisit.Text = "    Billet Paris Visite                                1,2,3 ou 5 jours";
             this.btnTicketParisVisit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicketParisVisit.UseVisualStyleBackColor = true;
+            this.btnTicketParisVisit.Click += new System.EventHandler(this.btnTicketParisVisit_Click);
             // 
             // btnTicketAirport
             // 
@@ -188,6 +192,7 @@
     "Orly";
             this.btnTicketAirport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicketAirport.UseVisualStyleBackColor = true;
+            this.btnTicketAirport.Click += new System.EventHandler(this.btnTicketAirport_Click);
             // 
             // btnTicketMobilis
             // 
@@ -200,6 +205,7 @@
     "roport";
             this.btnTicketMobilis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicketMobilis.UseVisualStyleBackColor = true;
+            this.btnTicketMobilis.Click += new System.EventHandler(this.btnTicketMobilis_Click);
             // 
             // TicketsSelection
             // 
@@ -222,6 +228,7 @@
             this.Controls.Add(this.lblTitleTicketsSelection);
             this.Name = "TicketsSelection";
             this.Text = "TicketsSelection";
+            this.Activated += new System.EventHandler(this.TicketsSelection_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

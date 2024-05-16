@@ -1,4 +1,6 @@
-﻿using System;
+﻿using P_UX.Controller;
+using P_UX.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -19,19 +21,25 @@ namespace P_UX
             Application.SetCompatibleTextRenderingDefault(false);
 
             //création de la vue principale
-            MainView aView = new MainView();
+            MainView aMainView = new MainView();
 
             //Selection de billet
-            TicketsSelection aticketsSelection = new TicketsSelection();
+            TicketsSelection aTicketsSelection = new TicketsSelection();
+
+            //Selection du tarif
+            TypeOfRate aTypeOfRate = new TypeOfRate();
+
+            //Prix du ticket
+            TicketPrices aTicketPrices = new TicketPrices();
 
             //Création du modele
             Model.Model aModel = new Model.Model();
 
             //Création du controller
-            Controller.Controller aController = new Controller.Controller(aView, aticketsSelection, aModel);
+            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aModel);
 
             //Lance la vue principale
-            Application.Run(aView);
+            Application.Run(aMainView);
         }
     }
 }

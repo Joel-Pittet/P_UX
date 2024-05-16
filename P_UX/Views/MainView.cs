@@ -14,12 +14,6 @@ namespace P_UX
 {
     public partial class MainView : Form
     {
-       
-        /// <summary>
-        /// Langues disponibles
-        /// </summary>
-        enum Language { FRA, ANG, ESP, DEU, ITA }
-
         /// <summary>
         /// Ressource Manager pour gérer les langues
         /// </summary>
@@ -36,6 +30,28 @@ namespace P_UX
         public MainView()
         {
             InitializeComponent();
+
+            btnPassNavigo.Enabled = false;
+        }
+
+        /// <summary>
+        /// Récupère la langue courante et l'applique sur la form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainView_Activated(object sender, EventArgs e)
+        {
+            GetLanguageToApply(Controller.CurrentLanguage);
+        }
+
+        /// <summary>
+        /// Redirection vers choix des billets
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnBuyTickets_Click(object sender, EventArgs e)
+        {
+            Controller.ShowTicketsSelection();
         }
 
         #region Footer
@@ -49,7 +65,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnFRA_Click(object sender, EventArgs e)
         {
-            UpdateCurrentLanguage(Language.FRA);
+            GetLanguageToApply(Controller.FindLanguage(0));
         }
 
         /// <summary>
@@ -59,7 +75,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnANG_Click(object sender, EventArgs e)
         {
-            UpdateCurrentLanguage(Language.ANG);
+            GetLanguageToApply(Controller.FindLanguage(1));
         }
 
         /// <summary>
@@ -69,7 +85,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnESP_Click(object sender, EventArgs e)
         {
-            UpdateCurrentLanguage(Language.ESP);
+            GetLanguageToApply(Controller.FindLanguage(2));
         }
 
         /// <summary>
@@ -79,7 +95,7 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnDEU_Click(object sender, EventArgs e)
         {
-            UpdateCurrentLanguage(Language.DEU);
+            GetLanguageToApply(Controller.FindLanguage(3));
         }
 
         /// <summary>
@@ -89,16 +105,28 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnITA_Click(object sender, EventArgs e)
         {
-            UpdateCurrentLanguage(Language.ITA);
+            GetLanguageToApply(Controller.FindLanguage(4));
         }
 
         #endregion
 
         /// <summary>
+        /// Récupère le ressource manager de la bonne langue et applique la langue au formulaiure
+        /// </summary>
+        /// <param name="languageToApply"></param>
+        public void GetLanguageToApply(int languageToApply)
+        {
+            _resManagerTraduction = Controller.SwitchCurrentLanguage(languageToApply);
+
+            ChangeLanguageOfControls(_resManagerTraduction);
+        }
+
+
+        /// <summary>
         /// Parcourt chaque controls et traduit le nom dans la langue demandée
         /// </summary>
         /// <param name="resManagerTraduction"></param>
-        public void UpdateLanguage(ResourceManager resManagerTraduction)
+        public void ChangeLanguageOfControls(ResourceManager resManagerTraduction)
         {
             _resManagerTraduction = resManagerTraduction;
 
@@ -111,30 +139,7 @@ namespace P_UX
             }
         }
 
-        /// <summary>
-        /// Met à jour la langue courante pour tous les controls
-        /// </summary>
-        /// <param name="lang"></param>
-        private void UpdateCurrentLanguage(Language lang)
-        {
-            //Donne la langue au controller et récupère le ressourceManager associé
-            _resManagerTraduction = Controller.NewCurrentLanguage(Convert.ToInt32(lang));
-
-            //Met à jour la langue dans l'interface
-            UpdateLanguage(_resManagerTraduction);
-        }
-
         #endregion
-
-        /// <summary>
-        /// Redirection vers choix des billets
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnBuyTickets_Click(object sender, EventArgs e)
-        {
-            Controller.ShowTicketsSelection();
-        }
 
         
     }

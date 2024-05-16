@@ -79,6 +79,24 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Plein tarif.
+        /// </summary>
+        internal static string btnFullFare {
+            get {
+                return ResourceManager.GetString("btnFullFare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tarif réduit.
+        /// </summary>
+        internal static string btnHalfFare {
+            get {
+                return ResourceManager.GetString("btnHalfFare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Recharger Pass Navigo.
         /// </summary>
         internal static string btnPassNavigo {
