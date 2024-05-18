@@ -35,6 +35,8 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnTicketT_Click(object sender, EventArgs e)
         {
+            //Controller.GetTicketFullPrice(btnTicketT.Text);
+
             Controller.ShowTypeOfRate();
         }
 

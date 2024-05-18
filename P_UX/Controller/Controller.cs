@@ -1,4 +1,5 @@
-﻿using P_UX.Resources;
+﻿using P_UX.Model;
+using P_UX.Resources;
 using P_UX.Views;
 using System;
 using System.Collections.Generic;
@@ -163,5 +164,26 @@ namespace P_UX.Controller
         {
             ChangeForm(actualForm, _mainView);
         }
+
+        /*/// <summary>
+        /// Retourne le prix du billet séléctionné
+        /// </summary>
+        /// <param name="textLabelBtnClicked"></param>
+        /// <returns></returns>
+        public double GetTicketFullPrice()
+        {
+            double ticketPrice = 0;
+
+            foreach (Tuple<string, double> ticket in _model.ListNameAndPriceTickets)
+            {
+                if ()
+                {
+                    ticketPrice = ticket.Item2;
+                    break;
+                }
+            }
+
+            return ticketPrice;
+        }*/
     }
 }
