@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Resources;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,28 +29,12 @@ namespace P_UX.Controller
         /// <summary>
         /// Langues disponibles
         /// </summary>
-        public enum Language { FRA, ANG, ESP, DEU, ITA }
+        public enum Language { FRA, ENG, ESP, DEU, ITA }
 
         /// <summary>
         /// Langue courante index de l'enum
         /// </summary>
-        private int _currentLanguage = 0;
-
-        /// <summary>
-        /// GETTER / SETTER
-        /// Langue courante index de l'enum
-        /// </summary>
-        public int CurrentLanguage
-        {
-            get
-            {
-                return _currentLanguage;
-            }
-            set
-            {
-                _currentLanguage = value;
-            }
-        }
+        private Language _currentLanguage = Language.FRA;
 
         /// <summary>
         /// Controleur
@@ -78,23 +63,25 @@ namespace P_UX.Controller
         /// </summary>
         /// <param name="langue"></param>
         /// <returns></returns>
-        public ResourceManager SwitchCurrentLanguage(int language)
+        public ResourceManager SwitchCurrentLanguage(Language language)
         {
+            _currentLanguage = language;
+
             switch (language)
             {
-                case 0:
+                case Language.FRA:
                     _resManagerTraduction = new ResourceManager(typeof(French));
                     break;
-                case 1:
+                case Language.ENG:
                     _resManagerTraduction = new ResourceManager(typeof(English));
                     break;
-                case 2:
+                case Language.ESP:
                     _resManagerTraduction = new ResourceManager(typeof(Spanish));
                     break;
-                case 3:
+                case Language.DEU:
                     _resManagerTraduction = new ResourceManager(typeof(German));
                     break;
-                case 4:
+                case Language.ITA:
                     _resManagerTraduction = new ResourceManager(typeof(Italian));
                     break;
                 default:
@@ -102,8 +89,23 @@ namespace P_UX.Controller
                     break;
             }
 
+            UpdateLanguageAllView();
+
             return _resManagerTraduction;
         }
+
+        /// <summary>
+        /// Met à jour la langue pour chaque vue
+        /// </summary>
+        public void UpdateLanguageAllView()
+        {
+            _mainView.ChangeLanguageOfControls(_resManagerTraduction);
+            _ticketsSelection.ChangeLanguageOfControls(_resManagerTraduction);
+            _typeOfRate.ChangeLanguageOfControls(_resManagerTraduction);
+            _ticketPrices.ChangeLanguageOfControls(_resManagerTraduction);
+            
+        }
+
 
         /// <summary>
         /// Affiche une Form et en cache une autre
@@ -161,43 +163,5 @@ namespace P_UX.Controller
         {
             ChangeForm(actualForm, _mainView);
         }
-
-        /// <summary>
-        /// Permet de récupérer la langue de l'enum
-        /// </summary>
-        /// <param name="language"></param>
-        /// <returns></returns>
-        public int FindLanguage(int language)
-        {
-            switch (language)
-            {
-                case 0:
-                    _currentLanguage = 0;
-                    return Convert.ToInt32(Language.FRA);
-                    break;
-                case 1:
-                    _currentLanguage = 1;
-                    return Convert.ToInt32(Language.ANG);
-                    break;
-                case 2:
-                    _currentLanguage = 2;
-                    return Convert.ToInt32(Language.ESP);
-                    break;
-                case 3:
-                    _currentLanguage = 3;
-                    return Convert.ToInt32(Language.DEU);
-                    break;
-                case 4:
-                    _currentLanguage = 4;
-                    return Convert.ToInt32(Language.ITA);
-                    break;
-                default :
-                    _currentLanguage = 0;
-                    return Convert.ToInt32(Language.FRA);
-                    break;
-            }
-
-        }
-
     }
 }

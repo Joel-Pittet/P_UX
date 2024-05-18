@@ -49,18 +49,20 @@
             // 
             this.lblTitleTicketsSelection.AutoSize = true;
             this.lblTitleTicketsSelection.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleTicketsSelection.Location = new System.Drawing.Point(320, 9);
+            this.lblTitleTicketsSelection.Location = new System.Drawing.Point(427, 11);
+            this.lblTitleTicketsSelection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitleTicketsSelection.Name = "lblTitleTicketsSelection";
-            this.lblTitleTicketsSelection.Size = new System.Drawing.Size(423, 58);
+            this.lblTitleTicketsSelection.Size = new System.Drawing.Size(537, 74);
             this.lblTitleTicketsSelection.TabIndex = 0;
             this.lblTitleTicketsSelection.Text = "Faites votre choix";
             // 
             // btnTicketT
             // 
             this.btnTicketT.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicketT.Location = new System.Drawing.Point(24, 84);
+            this.btnTicketT.Location = new System.Drawing.Point(32, 103);
+            this.btnTicketT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTicketT.Name = "btnTicketT";
-            this.btnTicketT.Size = new System.Drawing.Size(1032, 71);
+            this.btnTicketT.Size = new System.Drawing.Size(1376, 87);
             this.btnTicketT.TabIndex = 1;
             this.btnTicketT.Text = "    Billet t+                                               Metro, Bus, Tram, RER" +
     " dans Paris";
@@ -72,9 +74,10 @@
             // 
             this.btnITA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnITA.BackgroundImage")));
             this.btnITA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnITA.Location = new System.Drawing.Point(935, 575);
+            this.btnITA.Location = new System.Drawing.Point(1247, 708);
+            this.btnITA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnITA.Name = "btnITA";
-            this.btnITA.Size = new System.Drawing.Size(121, 74);
+            this.btnITA.Size = new System.Drawing.Size(161, 91);
             this.btnITA.TabIndex = 6;
             this.btnITA.UseVisualStyleBackColor = true;
             this.btnITA.Click += new System.EventHandler(this.btnITA_Click);
@@ -82,9 +85,10 @@
             // btnReturn
             // 
             this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(180, 575);
+            this.btnReturn.Location = new System.Drawing.Point(240, 708);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(140, 74);
+            this.btnReturn.Size = new System.Drawing.Size(187, 91);
             this.btnReturn.TabIndex = 10;
             this.btnReturn.Text = "Retour";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -93,9 +97,10 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(24, 575);
+            this.btnCancel.Location = new System.Drawing.Point(32, 708);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(150, 74);
+            this.btnCancel.Size = new System.Drawing.Size(200, 91);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Annuler";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -105,9 +110,10 @@
             // 
             this.btnDEU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDEU.BackgroundImage")));
             this.btnDEU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDEU.Location = new System.Drawing.Point(808, 575);
+            this.btnDEU.Location = new System.Drawing.Point(1077, 708);
+            this.btnDEU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDEU.Name = "btnDEU";
-            this.btnDEU.Size = new System.Drawing.Size(121, 74);
+            this.btnDEU.Size = new System.Drawing.Size(161, 91);
             this.btnDEU.TabIndex = 7;
             this.btnDEU.UseVisualStyleBackColor = true;
             this.btnDEU.Click += new System.EventHandler(this.btnDEU_Click);
@@ -116,9 +122,10 @@
             // 
             this.btnESP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnESP.BackgroundImage")));
             this.btnESP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnESP.Location = new System.Drawing.Point(681, 575);
+            this.btnESP.Location = new System.Drawing.Point(908, 708);
+            this.btnESP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnESP.Name = "btnESP";
-            this.btnESP.Size = new System.Drawing.Size(121, 74);
+            this.btnESP.Size = new System.Drawing.Size(161, 91);
             this.btnESP.TabIndex = 8;
             this.btnESP.UseVisualStyleBackColor = true;
             this.btnESP.Click += new System.EventHandler(this.btnESP_Click);
@@ -127,9 +134,10 @@
             // 
             this.btnANG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnANG.BackgroundImage")));
             this.btnANG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnANG.Location = new System.Drawing.Point(554, 575);
+            this.btnANG.Location = new System.Drawing.Point(739, 708);
+            this.btnANG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnANG.Name = "btnANG";
-            this.btnANG.Size = new System.Drawing.Size(121, 74);
+            this.btnANG.Size = new System.Drawing.Size(161, 91);
             this.btnANG.TabIndex = 9;
             this.btnANG.UseVisualStyleBackColor = true;
             this.btnANG.Click += new System.EventHandler(this.btnANG_Click);
@@ -138,9 +146,10 @@
             // 
             this.btnFRA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFRA.BackgroundImage")));
             this.btnFRA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFRA.Location = new System.Drawing.Point(427, 575);
+            this.btnFRA.Location = new System.Drawing.Point(569, 708);
+            this.btnFRA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFRA.Name = "btnFRA";
-            this.btnFRA.Size = new System.Drawing.Size(121, 74);
+            this.btnFRA.Size = new System.Drawing.Size(161, 91);
             this.btnFRA.TabIndex = 9;
             this.btnFRA.UseVisualStyleBackColor = true;
             this.btnFRA.Click += new System.EventHandler(this.btnFRA_Click);
@@ -148,9 +157,10 @@
             // btnTicketParisRegion
             // 
             this.btnTicketParisRegion.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicketParisRegion.Location = new System.Drawing.Point(24, 161);
+            this.btnTicketParisRegion.Location = new System.Drawing.Point(32, 198);
+            this.btnTicketParisRegion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTicketParisRegion.Name = "btnTicketParisRegion";
-            this.btnTicketParisRegion.Size = new System.Drawing.Size(1032, 71);
+            this.btnTicketParisRegion.Size = new System.Drawing.Size(1376, 87);
             this.btnTicketParisRegion.TabIndex = 1;
             this.btnTicketParisRegion.Text = "    Billet pour Paris Region                   Valide depuis cette station";
             this.btnTicketParisRegion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,9 +170,10 @@
             // btnTicketDisney
             // 
             this.btnTicketDisney.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicketDisney.Location = new System.Drawing.Point(24, 238);
+            this.btnTicketDisney.Location = new System.Drawing.Point(32, 293);
+            this.btnTicketDisney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTicketDisney.Name = "btnTicketDisney";
-            this.btnTicketDisney.Size = new System.Drawing.Size(1032, 71);
+            this.btnTicketDisney.Size = new System.Drawing.Size(1376, 87);
             this.btnTicketDisney.TabIndex = 1;
             this.btnTicketDisney.Text = "    Billet Disneyland Paris                     Valide depuis cette station";
             this.btnTicketDisney.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,9 +183,10 @@
             // btnTicketParisVisit
             // 
             this.btnTicketParisVisit.Font = new System.Drawing.Font("Century Gothic", 20.25F);
-            this.btnTicketParisVisit.Location = new System.Drawing.Point(24, 315);
+            this.btnTicketParisVisit.Location = new System.Drawing.Point(32, 388);
+            this.btnTicketParisVisit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTicketParisVisit.Name = "btnTicketParisVisit";
-            this.btnTicketParisVisit.Size = new System.Drawing.Size(1032, 71);
+            this.btnTicketParisVisit.Size = new System.Drawing.Size(1376, 87);
             this.btnTicketParisVisit.TabIndex = 1;
             this.btnTicketParisVisit.Text = "    Billet Paris Visite                                1,2,3 ou 5 jours";
             this.btnTicketParisVisit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,9 +196,10 @@
             // btnTicketAirport
             // 
             this.btnTicketAirport.Font = new System.Drawing.Font("Century Gothic", 20.25F);
-            this.btnTicketAirport.Location = new System.Drawing.Point(24, 392);
+            this.btnTicketAirport.Location = new System.Drawing.Point(32, 482);
+            this.btnTicketAirport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTicketAirport.Name = "btnTicketAirport";
-            this.btnTicketAirport.Size = new System.Drawing.Size(1032, 71);
+            this.btnTicketAirport.Size = new System.Drawing.Size(1376, 87);
             this.btnTicketAirport.TabIndex = 1;
             this.btnTicketAirport.Text = "    Billet Aéroport                                   Roissy-Charles de Gaulles, " +
     "Orly";
@@ -197,9 +210,10 @@
             // btnTicketMobilis
             // 
             this.btnTicketMobilis.Font = new System.Drawing.Font("Century Gothic", 20.25F);
-            this.btnTicketMobilis.Location = new System.Drawing.Point(24, 469);
+            this.btnTicketMobilis.Location = new System.Drawing.Point(32, 577);
+            this.btnTicketMobilis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTicketMobilis.Name = "btnTicketMobilis";
-            this.btnTicketMobilis.Size = new System.Drawing.Size(1032, 71);
+            this.btnTicketMobilis.Size = new System.Drawing.Size(1376, 87);
             this.btnTicketMobilis.TabIndex = 1;
             this.btnTicketMobilis.Text = "    Billet Mobilis                                       1 jour sans accès à l\'aé" +
     "roport";
@@ -209,9 +223,9 @@
             // 
             // TicketsSelection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.ClientSize = new System.Drawing.Size(1445, 814);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnITA);
@@ -226,9 +240,9 @@
             this.Controls.Add(this.btnTicketParisRegion);
             this.Controls.Add(this.btnTicketT);
             this.Controls.Add(this.lblTitleTicketsSelection);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TicketsSelection";
             this.Text = "TicketsSelection";
-            this.Activated += new System.EventHandler(this.TicketsSelection_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

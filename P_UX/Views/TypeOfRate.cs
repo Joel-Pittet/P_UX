@@ -15,11 +15,6 @@ namespace P_UX.Controller
     {
 
         /// <summary>
-        /// Ressource Manager pour gérer les langues
-        /// </summary>
-        ResourceManager _resManagerTraduction;
-
-        /// <summary>
         /// Controller par défaut
         /// </summary>
         public Controller Controller { get; set; }
@@ -30,16 +25,6 @@ namespace P_UX.Controller
         public TypeOfRate()
         {
             InitializeComponent();
-        }
-
-        /// <summary>
-        /// Récupère la langue courante et l'applique sur la form
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void TypeOfRate_Activated(object sender, EventArgs e)
-        {
-            GetLanguageToApply(Controller.CurrentLanguage);
         }
 
         #region Footer
@@ -53,7 +38,7 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnFRA_Click(object sender, EventArgs e)
         {
-            GetLanguageToApply(Controller.FindLanguage(0));
+            Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.FRA);
         }
 
         /// <summary>
@@ -63,7 +48,7 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnANG_Click(object sender, EventArgs e)
         {
-            GetLanguageToApply(Controller.FindLanguage(1));
+            Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.ENG);
         }
 
         /// <summary>
@@ -73,7 +58,7 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnESP_Click(object sender, EventArgs e)
         {
-            GetLanguageToApply(Controller.FindLanguage(2));
+            Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.ESP);
         }
 
         /// <summary>
@@ -83,7 +68,7 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnDEU_Click(object sender, EventArgs e)
         {
-            GetLanguageToApply(Controller.FindLanguage(3));
+            Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.DEU);
         }
 
         /// <summary>
@@ -93,7 +78,7 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnITA_Click(object sender, EventArgs e)
         {
-            GetLanguageToApply(Controller.FindLanguage(4));
+            Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.ITA);
         }
 
         #endregion
@@ -107,7 +92,7 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            Controller.ShowMainView();
+            Controller.ShowTicketsSelection();
         }
 
         /// <summary>
@@ -123,24 +108,11 @@ namespace P_UX.Controller
         #endregion
 
         /// <summary>
-        /// Récupère le ressource manager de la bonne langue et applique la langue au formulaiure
-        /// </summary>
-        /// <param name="languageToApply"></param>
-        public void GetLanguageToApply(int languageToApply)
-        {
-            _resManagerTraduction = Controller.SwitchCurrentLanguage(languageToApply);
-
-            ChangeLanguageOfControls(_resManagerTraduction);
-        }
-
-
-        /// <summary>
         /// Parcourt chaque controls et traduit le nom dans la langue demandée
         /// </summary>
         /// <param name="resManagerTraduction"></param>
         public void ChangeLanguageOfControls(ResourceManager resManagerTraduction)
-        {
-            _resManagerTraduction = resManagerTraduction;
+        { 
 
             foreach (Control control in Controls)
             {

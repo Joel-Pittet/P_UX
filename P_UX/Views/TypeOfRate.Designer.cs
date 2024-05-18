@@ -43,9 +43,10 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(23, 575);
+            this.btnCancel.Location = new System.Drawing.Point(31, 708);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(150, 74);
+            this.btnCancel.Size = new System.Drawing.Size(200, 91);
             this.btnCancel.TabIndex = 18;
             this.btnCancel.Text = "Annuler";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             // btnReturn
             // 
             this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(179, 575);
+            this.btnReturn.Location = new System.Drawing.Point(239, 708);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(140, 74);
+            this.btnReturn.Size = new System.Drawing.Size(187, 91);
             this.btnReturn.TabIndex = 17;
             this.btnReturn.Text = "Retour";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // 
             this.btnITA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnITA.BackgroundImage")));
             this.btnITA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnITA.Location = new System.Drawing.Point(934, 575);
+            this.btnITA.Location = new System.Drawing.Point(1245, 708);
+            this.btnITA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnITA.Name = "btnITA";
-            this.btnITA.Size = new System.Drawing.Size(121, 74);
+            this.btnITA.Size = new System.Drawing.Size(161, 91);
             this.btnITA.TabIndex = 12;
             this.btnITA.UseVisualStyleBackColor = true;
             this.btnITA.Click += new System.EventHandler(this.btnITA_Click);
@@ -77,9 +80,10 @@
             // 
             this.btnDEU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDEU.BackgroundImage")));
             this.btnDEU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDEU.Location = new System.Drawing.Point(807, 575);
+            this.btnDEU.Location = new System.Drawing.Point(1076, 708);
+            this.btnDEU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDEU.Name = "btnDEU";
-            this.btnDEU.Size = new System.Drawing.Size(121, 74);
+            this.btnDEU.Size = new System.Drawing.Size(161, 91);
             this.btnDEU.TabIndex = 13;
             this.btnDEU.UseVisualStyleBackColor = true;
             this.btnDEU.Click += new System.EventHandler(this.btnDEU_Click);
@@ -88,9 +92,10 @@
             // 
             this.btnESP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnESP.BackgroundImage")));
             this.btnESP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnESP.Location = new System.Drawing.Point(680, 575);
+            this.btnESP.Location = new System.Drawing.Point(907, 708);
+            this.btnESP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnESP.Name = "btnESP";
-            this.btnESP.Size = new System.Drawing.Size(121, 74);
+            this.btnESP.Size = new System.Drawing.Size(161, 91);
             this.btnESP.TabIndex = 14;
             this.btnESP.UseVisualStyleBackColor = true;
             this.btnESP.Click += new System.EventHandler(this.btnESP_Click);
@@ -99,9 +104,10 @@
             // 
             this.btnFRA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFRA.BackgroundImage")));
             this.btnFRA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFRA.Location = new System.Drawing.Point(426, 575);
+            this.btnFRA.Location = new System.Drawing.Point(568, 708);
+            this.btnFRA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFRA.Name = "btnFRA";
-            this.btnFRA.Size = new System.Drawing.Size(121, 74);
+            this.btnFRA.Size = new System.Drawing.Size(161, 91);
             this.btnFRA.TabIndex = 15;
             this.btnFRA.UseVisualStyleBackColor = true;
             this.btnFRA.Click += new System.EventHandler(this.btnFRA_Click);
@@ -110,9 +116,10 @@
             // 
             this.btnANG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnANG.BackgroundImage")));
             this.btnANG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnANG.Location = new System.Drawing.Point(553, 575);
+            this.btnANG.Location = new System.Drawing.Point(737, 708);
+            this.btnANG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnANG.Name = "btnANG";
-            this.btnANG.Size = new System.Drawing.Size(121, 74);
+            this.btnANG.Size = new System.Drawing.Size(161, 91);
             this.btnANG.TabIndex = 16;
             this.btnANG.UseVisualStyleBackColor = true;
             this.btnANG.Click += new System.EventHandler(this.btnANG_Click);
@@ -120,9 +127,10 @@
             // btnFullFare
             // 
             this.btnFullFare.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFullFare.Location = new System.Drawing.Point(23, 25);
+            this.btnFullFare.Location = new System.Drawing.Point(31, 31);
+            this.btnFullFare.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFullFare.Name = "btnFullFare";
-            this.btnFullFare.Size = new System.Drawing.Size(492, 534);
+            this.btnFullFare.Size = new System.Drawing.Size(656, 657);
             this.btnFullFare.TabIndex = 19;
             this.btnFullFare.Text = "Plein tarif";
             this.btnFullFare.UseVisualStyleBackColor = true;
@@ -131,18 +139,19 @@
             // btnHalfFare
             // 
             this.btnHalfFare.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHalfFare.Location = new System.Drawing.Point(563, 25);
+            this.btnHalfFare.Location = new System.Drawing.Point(751, 31);
+            this.btnHalfFare.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHalfFare.Name = "btnHalfFare";
-            this.btnHalfFare.Size = new System.Drawing.Size(492, 534);
+            this.btnHalfFare.Size = new System.Drawing.Size(656, 657);
             this.btnHalfFare.TabIndex = 20;
             this.btnHalfFare.Text = "Tarif réduit";
             this.btnHalfFare.UseVisualStyleBackColor = true;
             // 
             // TypeOfRate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.ClientSize = new System.Drawing.Size(1445, 814);
             this.Controls.Add(this.btnHalfFare);
             this.Controls.Add(this.btnFullFare);
             this.Controls.Add(this.btnCancel);
@@ -152,9 +161,9 @@
             this.Controls.Add(this.btnESP);
             this.Controls.Add(this.btnFRA);
             this.Controls.Add(this.btnANG);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TypeOfRate";
             this.Text = "TypeOfRate";
-            this.Activated += new System.EventHandler(this.TypeOfRate_Activated);
             this.ResumeLayout(false);
 
         }
