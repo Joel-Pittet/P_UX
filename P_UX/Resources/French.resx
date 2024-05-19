@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnAddTickets" xml:space="preserve">
+    <value>Acheter</value>
+  </data>
   <data name="btnBuyTickets" xml:space="preserve">
     <value>Acheter des billets</value>
   </data>
   <data name="btnCancel" xml:space="preserve">
     <value>Annuler</value>
+  </data>
+  <data name="btnFiveTimes" xml:space="preserve">
+    <value>5 billets</value>
+  </data>
+  <data name="btnFourTimes" xml:space="preserve">
+    <value>4 billets</value>
   </data>
   <data name="btnFullFare" xml:space="preserve">
     <value>Plein tarif</value>
@@ -129,11 +138,26 @@
   <data name="btnHalfFare" xml:space="preserve">
     <value>Tarif réduit</value>
   </data>
+  <data name="btnHeightTimes" xml:space="preserve">
+    <value>8 billets</value>
+  </data>
+  <data name="btnOnce" xml:space="preserve">
+    <value>1 billet</value>
+  </data>
   <data name="btnPassNavigo" xml:space="preserve">
     <value>Recharger Pass Navigo</value>
   </data>
   <data name="btnReturn" xml:space="preserve">
     <value>Retour</value>
+  </data>
+  <data name="btnSevenTimes" xml:space="preserve">
+    <value>7 billets</value>
+  </data>
+  <data name="btnSixTimes" xml:space="preserve">
+    <value>6 billets</value>
+  </data>
+  <data name="btnThreeTimes" xml:space="preserve">
+    <value>3 billets</value>
   </data>
   <data name="btnTicketAirport" xml:space="preserve">
     <value>    Billet Aéroport                                   Roissy-Charles de Gaulles, Orly</value>
@@ -152,6 +176,15 @@
   </data>
   <data name="btnTicketT" xml:space="preserve">
     <value>    Billet t+                                               Metro, Bus, Tram, RER dans Paris</value>
+  </data>
+  <data name="btnTwice" xml:space="preserve">
+    <value>2 billets</value>
+  </data>
+  <data name="lblChoseNbrTickets" xml:space="preserve">
+    <value>Indiquez le nombre de billets souhaités</value>
+  </data>
+  <data name="lblTitleTicketPrices" xml:space="preserve">
+    <value>Choisissez le nombre de billets souhiatés</value>
   </data>
   <data name="lblTitleTicketsSelection" xml:space="preserve">
     <value>Faites votre choix</value>

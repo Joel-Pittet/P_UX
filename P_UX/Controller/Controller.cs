@@ -128,7 +128,6 @@ namespace P_UX.Controller
             ChangeForm(_ticketsSelection, _mainView);
         }
 
-
         /// <summary>
         /// Affiche la vue de selection des tickets
         /// </summary>
@@ -138,20 +137,42 @@ namespace P_UX.Controller
         }
 
         /// <summary>
-        /// Affiche la vue des tarifs
+        /// Affiche la vue de selection des tickets depuis TypeOfRate
         /// </summary>
-        public void ShowTypeOfRate()
+        public void ShowTicketsSelectionFromTypeOfRate()
         {
+            ChangeForm(_typeOfRate, _ticketsSelection);
+        }
+
+
+        /// <summary>
+        /// Affiche la vue des tarifs et récupère le prix du billet seléctionné
+        /// </summary>
+        public void ShowTypeOfRate(string nameOfButton)
+        {
+            _model.FullPriceTicketSelectioned = GetTicketFullPrice(nameOfButton);
+
             ChangeForm(_ticketsSelection, _typeOfRate);
+        }
+
+        /// <summary>
+        /// Affiche la vue des tarif après avoir fait retour sur la vue des prix du ticket
+        /// </summary>
+        public void ShowTypeOfRateFromTicketsPrice()
+        {
+            ChangeForm(_ticketPrices, _typeOfRate);
         }
 
         /// <summary>
         /// Affiche la vue des prix des billets
         /// </summary>
-        public void ShowTicketsPrice()
+        public void ShowTicketsPrice(bool isFullPrice)
         {
+            _ticketPrices.ShowTicketPriceOnBtn(isFullPrice);
 
+            ChangeForm(_typeOfRate, _ticketPrices);
         }
+
 
 
         #endregion
@@ -165,25 +186,43 @@ namespace P_UX.Controller
             ChangeForm(actualForm, _mainView);
         }
 
-        /*/// <summary>
-        /// Retourne le prix du billet séléctionné
-        /// </summary>
-        /// <param name="textLabelBtnClicked"></param>
-        /// <returns></returns>
-        public double GetTicketFullPrice()
+       /// <summary>
+       /// Récupère le prix du billet dans le model
+       /// </summary>
+       /// <param name="nameOfButton"></param>
+       /// <returns></returns>
+        public double GetTicketFullPrice(string nameOfButton)
         {
             double ticketPrice = 0;
 
             foreach (Tuple<string, double> ticket in _model.ListNameAndPriceTickets)
             {
-                if ()
+                if (ticket.Item1 == nameOfButton)
                 {
                     ticketPrice = ticket.Item2;
-                    break;
                 }
             }
 
             return ticketPrice;
-        }*/
+        }
+
+        /// <summary>
+        /// Calcule le prix du demi tarif
+        /// </summary>
+        public double CalculateTicketPriceHalfFare()
+        {
+            _model.HalfPrice = _model.FullPriceTicketSelectioned / 2;
+
+            return _model.HalfPrice;
+        }
+
+        /// <summary>
+        /// Retourne le prix complet du billet seléctionné
+        /// </summary>
+        /// <returns></returns>
+        public double ReturnFullPrice()
+        {
+            return _model.FullPriceTicketSelectioned;
+        }
     }
 }

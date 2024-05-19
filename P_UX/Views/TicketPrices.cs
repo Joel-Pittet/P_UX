@@ -18,12 +18,113 @@ namespace P_UX.Views
         /// </summary>
         public Controller.Controller Controller { get; set; }
 
+        //Texte de base des boutons
+        string btnOne = "";
+        string btnTwo = "";
+        string btnThree = "";
+        string btnFour = "";
+
+        string btnFive = "";
+        string btnSix = "";
+        string btnSeven = "";
+        string btnHeight = "";
+
+        /// <summary>
+        /// Prix courant du billet selon tarif et type de billets
+        /// </summary>
+        double actualPrice;
+
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
         public TicketPrices()
         {
             InitializeComponent();
+
+            txtBxNbrTickets.Text = Convert.ToString(0);
+
+            GetBaseNameBtn();
+        }
+
+
+        /// <summary>
+        /// Affiche le prix si un nombre est entré dans la textBox
+        /// </summary>
+        public void CalculateNnTicketPrice()
+        {
+            int nbTicketsWanted = Convert.ToInt32(txtBxNbrTickets.Text);
+
+            double priceTxtBx = actualPrice * nbTicketsWanted;
+
+            lblPriceTxtBx.Text = priceTxtBx.ToString();
+        }
+
+
+        /// <summary>
+        /// Ajoute le prix du billet seléctionné dans le texte des btn des tickets
+        /// </summary>
+        public void ShowTicketPriceOnBtn(bool isFullPrice)
+        {
+            if (isFullPrice)
+            {
+                actualPrice = Controller.ReturnFullPrice();
+
+                UpdateBtnNameWithPrices();
+
+            }
+            else
+            {
+                actualPrice = Controller.CalculateTicketPriceHalfFare();
+
+                UpdateBtnNameWithPrices();
+            }
+        }
+
+        /// <summary>
+        /// Met à jour le texte des boutons pour affiche le prix a coté du nombre
+        /// </summary>
+        private void UpdateBtnNameWithPrices()
+        {
+            btnOnce.Text = btnOnce.Text + $"  ({Math.Round(actualPrice, 2)} €)";
+            btnTwice.Text = btnTwice.Text + $"  ({Math.Round(actualPrice * 2, 2)} €)";
+            btnThreeTimes.Text = btnThreeTimes.Text + $"  ({Math.Round(actualPrice * 3, 2)} €)";
+            btnFourTimes.Text = btnFourTimes.Text + $"  ({Math.Round(actualPrice * 4, 2)} €)";
+            btnFiveTimes.Text = btnFiveTimes.Text + $"  ({Math.Round(actualPrice * 5, 2)} €)";
+            btnSixTimes.Text = btnSixTimes.Text + $"  ({Math.Round(actualPrice * 6, 2)} €)";
+            btnSevenTimes.Text = btnSevenTimes.Text + $"  ({Math.Round(actualPrice * 7, 2)} €)";
+            btnHeightTimes.Text = btnHeightTimes.Text + $"  ({Math.Round(actualPrice * 8, 2)} €)";
+        }
+
+
+        /// <summary>
+        /// Stocke le nom des boutons de base pour pouvoir les réaffichés si l'utilisateur fais retour
+        /// </summary>
+        public void GetBaseNameBtn()
+        {
+            btnOne = btnOnce.Text;
+            btnTwo = btnTwice.Text;
+            btnThree = btnThreeTimes.Text;
+            btnFour = btnFourTimes .Text;
+
+            btnFive = btnFiveTimes .Text;
+            btnSix = btnSixTimes .Text;
+            btnSeven = btnSevenTimes .Text;
+            btnHeight = btnHeightTimes.Text;
+        }
+
+        /// <summary>
+        /// Réaffiche le text de base sur les bontons
+        /// </summary>
+        public void ResetBtnName()
+        {
+            btnOnce.Text = btnOne;
+            btnTwice.Text = btnTwo;
+            btnThreeTimes.Text = btnThree;
+            btnFourTimes.Text = btnFour;
+            btnFiveTimes.Text = btnFive;
+            btnSixTimes.Text = btnSix;
+            btnSevenTimes.Text = btnSeven;
+            btnHeightTimes.Text = btnHeight;
         }
 
         #region Footer
@@ -91,7 +192,9 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            Controller.ShowMainView();
+            ResetBtnName();
+
+            Controller.ShowTypeOfRateFromTicketsPrice();
         }
 
         /// <summary>
@@ -101,6 +204,8 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            ResetBtnName();
+
             Controller.CancelButton(this);
         }
 
@@ -123,5 +228,20 @@ namespace P_UX.Views
         }
 
         #endregion
+
+        /// <summary>
+        /// Calcule le prix de la textbox et l'affiche
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtBxNbrTickets_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBxNbrTickets.Text == "")
+            {
+                txtBxNbrTickets.Text = Convert.ToString(0);
+            }
+
+            CalculateNnTicketPrice();
+        }
     }
 }

@@ -61,6 +61,15 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Kaufen.
+        /// </summary>
+        internal static string btnAddTickets {
+            get {
+                return ResourceManager.GetString("btnAddTickets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Tickets kaufen.
         /// </summary>
         internal static string btnBuyTickets {
@@ -75,6 +84,24 @@ namespace P_UX.Resources {
         internal static string btnCancel {
             get {
                 return ResourceManager.GetString("btnCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 5 Fahrkarten.
+        /// </summary>
+        internal static string btnFiveTimes {
+            get {
+                return ResourceManager.GetString("btnFiveTimes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 4 Fahrkarten.
+        /// </summary>
+        internal static string btnFourTimes {
+            get {
+                return ResourceManager.GetString("btnFourTimes", resourceCulture);
             }
         }
         
@@ -97,6 +124,24 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à 8 Fahrkarten.
+        /// </summary>
+        internal static string btnHeightTimes {
+            get {
+                return ResourceManager.GetString("btnHeightTimes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 1 Fahrkarte.
+        /// </summary>
+        internal static string btnOnce {
+            get {
+                return ResourceManager.GetString("btnOnce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Navigo Pass aufladen.
         /// </summary>
         internal static string btnPassNavigo {
@@ -111,6 +156,33 @@ namespace P_UX.Resources {
         internal static string btnReturn {
             get {
                 return ResourceManager.GetString("btnReturn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 7 Fahrkarten.
+        /// </summary>
+        internal static string btnSevenTimes {
+            get {
+                return ResourceManager.GetString("btnSevenTimes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 6 Fahrkarten.
+        /// </summary>
+        internal static string btnSixTimes {
+            get {
+                return ResourceManager.GetString("btnSixTimes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 3 Fahrkarten.
+        /// </summary>
+        internal static string btnThreeTimes {
+            get {
+                return ResourceManager.GetString("btnThreeTimes", resourceCulture);
             }
         }
         
@@ -165,6 +237,33 @@ namespace P_UX.Resources {
         internal static string btnTicketT {
             get {
                 return ResourceManager.GetString("btnTicketT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 2 Fahrkarten.
+        /// </summary>
+        internal static string btnTwice {
+            get {
+                return ResourceManager.GetString("btnTwice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Geben Sie die Anzahl der Fahrkarten an.
+        /// </summary>
+        internal static string lblChoseNbrTickets {
+            get {
+                return ResourceManager.GetString("lblChoseNbrTickets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Anzahl der Fahrkarten.
+        /// </summary>
+        internal static string lblTitleTicketPrices {
+            get {
+                return ResourceManager.GetString("lblTitleTicketPrices", resourceCulture);
             }
         }
         

@@ -92,7 +92,7 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            Controller.ShowTicketsSelection();
+            Controller.ShowTicketsSelectionFromTypeOfRate();
         }
 
         /// <summary>
@@ -113,7 +113,6 @@ namespace P_UX.Controller
         /// <param name="resManagerTraduction"></param>
         public void ChangeLanguageOfControls(ResourceManager resManagerTraduction)
         { 
-
             foreach (Control control in Controls)
             {
                 if (resManagerTraduction.GetString(control.Name) != null)
@@ -132,7 +131,17 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnFullFare_Click(object sender, EventArgs e)
         {
+            Controller.ShowTicketsPrice(true);
+        }
 
+        /// <summary>
+        /// Affiche les prix du billet selectionné en demi tarif
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnHalfFare_Click(object sender, EventArgs e)
+        {
+            Controller.ShowTicketsPrice(false);
         }
     }
 }
