@@ -120,6 +120,9 @@
   <data name="btnAddTickets" xml:space="preserve">
     <value>Kaufen</value>
   </data>
+  <data name="btnBuyOtherTickets" xml:space="preserve">
+    <value>Weitere Fahrkarten kaufen</value>
+  </data>
   <data name="btnBuyTickets" xml:space="preserve">
     <value>Tickets kaufen</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="btnFullFare" xml:space="preserve">
     <value>Voller Tarif</value>
+  </data>
+  <data name="btnGoPay" xml:space="preserve">
+    <value>Mit der Zahlung fortfahren</value>
   </data>
   <data name="btnHalfFare" xml:space="preserve">
     <value>Reduzierter Tarif</value>
@@ -180,13 +186,31 @@
   <data name="btnTwice" xml:space="preserve">
     <value>2 Fahrkarten</value>
   </data>
+  <data name="lblAmount" xml:space="preserve">
+    <value>Betrag</value>
+  </data>
   <data name="lblChoseNbrTickets" xml:space="preserve">
     <value>Geben Sie die Anzahl der Fahrkarten an</value>
+  </data>
+  <data name="lblNbrTickets" xml:space="preserve">
+    <value>Anzahl der Fahrkarten</value>
+  </data>
+  <data name="lblRate" xml:space="preserve">
+    <value>Tarif</value>
+  </data>
+  <data name="lblTitleOrderResume" xml:space="preserve">
+    <value>Zusammenfassung der Bestellung</value>
   </data>
   <data name="lblTitleTicketPrices" xml:space="preserve">
     <value>Anzahl der Fahrkarten</value>
   </data>
+  <data name="lblTitleTickets" xml:space="preserve">
+    <value>Titel</value>
+  </data>
   <data name="lblTitleTicketsSelection" xml:space="preserve">
     <value>Treffen Sie Ihre Entscheidung</value>
+  </data>
+  <data name="lblTotalToPay" xml:space="preserve">
+    <value>Zu zahlender Gesamtbetrag</value>
   </data>
 </root>

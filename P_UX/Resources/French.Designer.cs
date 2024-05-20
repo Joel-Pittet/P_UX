@@ -70,6 +70,15 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Acheter d&apos;autres billets.
+        /// </summary>
+        internal static string btnBuyOtherTickets {
+            get {
+                return ResourceManager.GetString("btnBuyOtherTickets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Acheter des billets.
         /// </summary>
         internal static string btnBuyTickets {
@@ -111,6 +120,15 @@ namespace P_UX.Resources {
         internal static string btnFullFare {
             get {
                 return ResourceManager.GetString("btnFullFare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Procéder au paiment.
+        /// </summary>
+        internal static string btnGoPay {
+            get {
+                return ResourceManager.GetString("btnGoPay", resourceCulture);
             }
         }
         
@@ -250,11 +268,47 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Montant.
+        /// </summary>
+        internal static string lblAmount {
+            get {
+                return ResourceManager.GetString("lblAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Indiquez le nombre de billets souhaités.
         /// </summary>
         internal static string lblChoseNbrTickets {
             get {
                 return ResourceManager.GetString("lblChoseNbrTickets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Nombre de billets.
+        /// </summary>
+        internal static string lblNbrTickets {
+            get {
+                return ResourceManager.GetString("lblNbrTickets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tarif.
+        /// </summary>
+        internal static string lblRate {
+            get {
+                return ResourceManager.GetString("lblRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Résumé de la commande.
+        /// </summary>
+        internal static string lblTitleOrderResume {
+            get {
+                return ResourceManager.GetString("lblTitleOrderResume", resourceCulture);
             }
         }
         
@@ -268,11 +322,29 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Titre.
+        /// </summary>
+        internal static string lblTitleTickets {
+            get {
+                return ResourceManager.GetString("lblTitleTickets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Faites votre choix.
         /// </summary>
         internal static string lblTitleTicketsSelection {
             get {
                 return ResourceManager.GetString("lblTitleTicketsSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Total à payer.
+        /// </summary>
+        internal static string lblTotalToPay {
+            get {
+                return ResourceManager.GetString("lblTotalToPay", resourceCulture);
             }
         }
     }

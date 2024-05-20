@@ -35,6 +35,8 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnTicketT_Click(object sender, EventArgs e)
         {
+            Controller.NameTicketSelected = "Billet t+";
+
             Controller.ShowTypeOfRate(btnTicketT.Name);
         }
 
@@ -45,6 +47,8 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnTicketParisRegion_Click(object sender, EventArgs e)
         {
+            Controller.NameTicketSelected = "Billet Paris Region";
+
             Controller.ShowTypeOfRate(btnTicketParisRegion.Name);
         }
 
@@ -55,6 +59,8 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnTicketDisney_Click(object sender, EventArgs e)
         {
+            Controller.NameTicketSelected = "Billet Disneyland Paris";
+
             Controller.ShowTypeOfRate(btnTicketDisney.Name);
         }
 
@@ -65,6 +71,8 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnTicketParisVisit_Click(object sender, EventArgs e)
         {
+            Controller.NameTicketSelected = "Billet Paris Visite";
+
             Controller.ShowTypeOfRate(btnTicketParisVisit.Name);
         }
 
@@ -75,6 +83,8 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnTicketAirport_Click(object sender, EventArgs e)
         {
+            Controller.NameTicketSelected = "Billet Aéroport";
+
             Controller.ShowTypeOfRate(btnTicketAirport.Name);
         }
 
@@ -85,6 +95,8 @@ namespace P_UX
         /// <param name="e"></param>
         private void btnTicketMobilis_Click(object sender, EventArgs e)
         {
+            Controller.NameTicketSelected = "Billet Mobilis";
+
             Controller.ShowTypeOfRate(btnTicketMobilis.Name);
         }
 

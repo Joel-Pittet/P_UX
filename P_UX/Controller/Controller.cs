@@ -23,6 +23,7 @@ namespace P_UX.Controller
         private TicketsSelection _ticketsSelection;
         private TypeOfRate _typeOfRate;
         private TicketPrices _ticketPrices;
+        private OrderResume _orderResume;
 
         //Gère l'internationalisation
         private ResourceManager _resManagerTraduction;
@@ -38,19 +39,104 @@ namespace P_UX.Controller
         private Language _currentLanguage = Language.FRA;
 
         /// <summary>
+        /// Prix du billet seléctionné
+        /// </summary>
+        private double _priceTicketSelected;
+
+        /// <summary>
+        /// GETTER / SETTER
+        /// Prix du billet seléctionné
+        /// </summary>
+        public double PriceTicketSelected
+        {
+            get
+            {
+                return _priceTicketSelected;
+            }
+            private set
+            {
+                _priceTicketSelected = value;
+            }
+        }
+
+        /// <summary>
+        /// Nombre de fois que le billet est souhaité
+        /// </summary>
+        private int _ticketTimesWanted;
+
+        /// <summary>
+        /// GETTER / SETTER
+        /// Nombre de fois que le billet est souhaité
+        /// </summary>
+        public int TicketTimesWanted
+        {
+            get
+            {
+                return _ticketTimesWanted;
+            }
+            set
+            {
+                _ticketTimesWanted = value;
+            }
+        }
+
+        /// <summary>
+        /// Nom du billet choisi
+        /// </summary>
+        private string _nameTicketSelected;
+
+        /// <summary>
+        /// Si le tarif est plein ou demi
+        /// </summary>
+        private bool _isFullPrice;
+
+        /// <summary>
+        /// GETTER / SETTER
+        /// Si le tarif est plein ou demi
+        /// </summary>
+        public bool isFullPrice
+        {
+            get
+            {
+                return _isFullPrice;
+            }
+            set
+            {
+                _isFullPrice = value;
+            }
+        }
+
+        /// <summary>
+        /// GETTER / SETTER
+        /// Nom du billet choisi
+        /// </summary>
+        public string NameTicketSelected
+        {
+            get
+            {
+                return _nameTicketSelected;
+            }
+            set
+            {
+                _nameTicketSelected = value;
+            }
+        }
+
+        /// <summary>
         /// Controleur
         /// </summary>
         /// <param name="view"></param>
         /// <param name="model"></param>
-        public Controller(MainView view, TicketsSelection ticketsSelection, TypeOfRate typeOfRate, TicketPrices ticketPrices, Model.Model model)
+        public Controller(MainView view, TicketsSelection ticketsSelection, TypeOfRate typeOfRate, TicketPrices ticketPrices, OrderResume orderResume, Model.Model model)
         {
             _mainView = view;
             _model = model;
             _ticketsSelection = ticketsSelection;
             _typeOfRate = typeOfRate;
             _ticketPrices = ticketPrices;
+            _orderResume = orderResume;
 
-
+            _orderResume.Controller = this;
             _ticketPrices.Controller = this;
             _typeOfRate.Controller = this;
             _ticketsSelection.Controller = this;
@@ -104,7 +190,7 @@ namespace P_UX.Controller
             _ticketsSelection.ChangeLanguageOfControls(_resManagerTraduction);
             _typeOfRate.ChangeLanguageOfControls(_resManagerTraduction);
             _ticketPrices.ChangeLanguageOfControls(_resManagerTraduction);
-            
+            _orderResume.ChangeLanguageOfControls (_resManagerTraduction);
         }
 
 
@@ -173,7 +259,25 @@ namespace P_UX.Controller
             ChangeForm(_typeOfRate, _ticketPrices);
         }
 
+        /// <summary>
+        /// Affiche la vue des prix des billets sur le retour du résumé de la commande
+        /// </summary>
+        public void ShowTicketPriceFromOrderResume()
+        {
+            ChangeForm(_orderResume, _ticketPrices);
+        }
 
+        /// <summary>
+        /// Affiche le résumé de la commande et récupère le prix du billet séléctionné et le nombre de fois qu'il est commandé
+        /// </summary>
+        public void ShowOrderResume(double ticketPrice, int timesWanted)
+        {
+            _priceTicketSelected = ticketPrice;
+
+            _ticketTimesWanted = timesWanted;
+
+            ChangeForm(_ticketPrices, _orderResume);
+        }
 
         #endregion
 
@@ -223,6 +327,22 @@ namespace P_UX.Controller
         public double ReturnFullPrice()
         {
             return _model.FullPriceTicketSelectioned;
+        }
+
+        /// <summary>
+        /// Retourne le tarif
+        /// </summary>
+        /// <returns></returns>
+        public string ReturnTarif()
+        {
+            if (_isFullPrice)
+            {
+                return "Plein";
+            }
+            else
+            {
+                return "Demi-Tarif";
+            }
         }
     }
 }

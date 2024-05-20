@@ -41,7 +41,7 @@ namespace P_UX.Views
         {
             InitializeComponent();
 
-            txtBxNbrTickets.Text = Convert.ToString(0);
+            lblPriceTxtBx.Text = Convert.ToString(0);
 
             GetBaseNameBtn();
         }
@@ -56,7 +56,7 @@ namespace P_UX.Views
 
             double priceTxtBx = actualPrice * nbTicketsWanted;
 
-            lblPriceTxtBx.Text = priceTxtBx.ToString();
+            lblPriceTxtBx.Text = Convert.ToString(Math.Round(priceTxtBx, 2));
         }
 
 
@@ -139,6 +139,8 @@ namespace P_UX.Views
         private void btnFRA_Click(object sender, EventArgs e)
         {
             Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.FRA);
+
+            UpdateBtnNameWithPrices();
         }
 
         /// <summary>
@@ -149,6 +151,8 @@ namespace P_UX.Views
         private void btnANG_Click(object sender, EventArgs e)
         {
             Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.ENG);
+
+            UpdateBtnNameWithPrices();
         }
 
         /// <summary>
@@ -159,6 +163,8 @@ namespace P_UX.Views
         private void btnESP_Click(object sender, EventArgs e)
         {
             Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.ESP);
+
+            UpdateBtnNameWithPrices();
         }
 
         /// <summary>
@@ -169,6 +175,8 @@ namespace P_UX.Views
         private void btnDEU_Click(object sender, EventArgs e)
         {
             Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.DEU);
+
+            UpdateBtnNameWithPrices();
         }
 
         /// <summary>
@@ -179,6 +187,8 @@ namespace P_UX.Views
         private void btnITA_Click(object sender, EventArgs e)
         {
             Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.ITA);
+
+            UpdateBtnNameWithPrices();
         }
 
         #endregion
@@ -236,12 +246,104 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void txtBxNbrTickets_TextChanged(object sender, EventArgs e)
         {
-            if (txtBxNbrTickets.Text == "")
+            if (txtBxNbrTickets.Text != string.Empty)
             {
-                txtBxNbrTickets.Text = Convert.ToString(0);
+                CalculateNnTicketPrice();
             }
+            else
+            {
+                lblPriceTxtBx.Text = Convert.ToString(0);
+            }
+        }
 
-            CalculateNnTicketPrice();
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnOnce_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, 1);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnTwice_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, 2);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnThreeTimes_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, 3);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnFourTimes_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, 4);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnFiveTimes_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, 5);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSixTimes_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, 6);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSevenTimes_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, 7);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnHeightTimes_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, 8);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande et retourne le prix du billet et le nombre de fois au controleur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnAddTickets_Click(object sender, EventArgs e)
+        {
+            Controller.ShowOrderResume(actualPrice, Convert.ToInt32(txtBxNbrTickets.Text));
         }
     }
 }

@@ -157,6 +157,7 @@
             this.btnOnce.TabIndex = 20;
             this.btnOnce.Text = "1 billet";
             this.btnOnce.UseVisualStyleBackColor = true;
+            this.btnOnce.Click += new System.EventHandler(this.btnOnce_Click);
             // 
             // btnSevenTimes
             // 
@@ -168,6 +169,7 @@
             this.btnSevenTimes.TabIndex = 24;
             this.btnSevenTimes.Text = "7 billets";
             this.btnSevenTimes.UseVisualStyleBackColor = true;
+            this.btnSevenTimes.Click += new System.EventHandler(this.btnSevenTimes_Click);
             // 
             // btnFiveTimes
             // 
@@ -179,6 +181,7 @@
             this.btnFiveTimes.TabIndex = 23;
             this.btnFiveTimes.Text = "5 billets";
             this.btnFiveTimes.UseVisualStyleBackColor = true;
+            this.btnFiveTimes.Click += new System.EventHandler(this.btnFiveTimes_Click);
             // 
             // btnThreeTimes
             // 
@@ -190,6 +193,7 @@
             this.btnThreeTimes.TabIndex = 22;
             this.btnThreeTimes.Text = "3 billets";
             this.btnThreeTimes.UseVisualStyleBackColor = true;
+            this.btnThreeTimes.Click += new System.EventHandler(this.btnThreeTimes_Click);
             // 
             // btnHeightTimes
             // 
@@ -201,6 +205,7 @@
             this.btnHeightTimes.TabIndex = 28;
             this.btnHeightTimes.Text = "8 billets";
             this.btnHeightTimes.UseVisualStyleBackColor = true;
+            this.btnHeightTimes.Click += new System.EventHandler(this.btnHeightTimes_Click);
             // 
             // btnSixTimes
             // 
@@ -212,6 +217,7 @@
             this.btnSixTimes.TabIndex = 27;
             this.btnSixTimes.Text = "6 billets";
             this.btnSixTimes.UseVisualStyleBackColor = true;
+            this.btnSixTimes.Click += new System.EventHandler(this.btnSixTimes_Click);
             // 
             // btnFourTimes
             // 
@@ -223,6 +229,7 @@
             this.btnFourTimes.TabIndex = 26;
             this.btnFourTimes.Text = "4 billets";
             this.btnFourTimes.UseVisualStyleBackColor = true;
+            this.btnFourTimes.Click += new System.EventHandler(this.btnFourTimes_Click);
             // 
             // btnTwice
             // 
@@ -234,6 +241,7 @@
             this.btnTwice.TabIndex = 25;
             this.btnTwice.Text = "2 billets";
             this.btnTwice.UseVisualStyleBackColor = true;
+            this.btnTwice.Click += new System.EventHandler(this.btnTwice_Click);
             // 
             // lblChoseNbrTickets
             // 
@@ -259,13 +267,14 @@
             // btnAddTickets
             // 
             this.btnAddTickets.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddTickets.Location = new System.Drawing.Point(825, 574);
+            this.btnAddTickets.Location = new System.Drawing.Point(776, 574);
             this.btnAddTickets.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddTickets.Name = "btnAddTickets";
             this.btnAddTickets.Size = new System.Drawing.Size(245, 60);
             this.btnAddTickets.TabIndex = 31;
-            this.btnAddTickets.Text = "Ajouter";
+            this.btnAddTickets.Text = "Acheter";
             this.btnAddTickets.UseVisualStyleBackColor = true;
+            this.btnAddTickets.Click += new System.EventHandler(this.btnAddTickets_Click);
             // 
             // lblPriceTxtBx
             // 
@@ -280,11 +289,11 @@
             // 
             this.lblCHF.AutoSize = true;
             this.lblCHF.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCHF.Location = new System.Drawing.Point(999, 532);
+            this.lblCHF.Location = new System.Drawing.Point(990, 532);
             this.lblCHF.Name = "lblCHF";
-            this.lblCHF.Size = new System.Drawing.Size(71, 34);
+            this.lblCHF.Size = new System.Drawing.Size(31, 34);
             this.lblCHF.TabIndex = 33;
-            this.lblCHF.Text = "CHF";
+            this.lblCHF.Text = "€";
             // 
             // TicketPrices
             // 

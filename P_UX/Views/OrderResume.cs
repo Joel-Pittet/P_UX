@@ -11,21 +11,51 @@ using System.Windows.Forms;
 
 namespace P_UX.Controller
 {
-    public partial class TypeOfRate : Form
+    public partial class OrderResume : Form
     {
-
         /// <summary>
-        /// Controller par défaut
+        /// Lie la vue au controleur
         /// </summary>
         public Controller Controller { get; set; }
 
         /// <summary>
-        /// Constructeur
+        /// Nombre de billet minimum dans une commande
         /// </summary>
-        public TypeOfRate()
+        private const int _MINIMUM_NBR_TICKETS_TO_ORDER = 1;
+
+        /// <summary>
+        /// Constrcucteur
+        /// </summary>
+        public OrderResume()
         {
             InitializeComponent();
         }
+
+        /*
+        private void SetButtonsAndLabelsForNewTickets(int levelLine)
+        {
+            //Bouton moins
+            Button btnMinus = new Button();
+            btnMinus.Text = "-";
+            btnMinus.Size = new Size(48, 46);
+            btnMinus.Location = new Point(45, 140);
+            this.Controls.Add(btnMinus);
+
+            //Label nombre de billets
+            Label lblTicketsTimes = new Label();
+            lblTicketsTimes.Text = Convert.ToString(Controller.TicketTimesWanted);
+            lblTicketsTimes.Width = 10;
+            lblTicketsTimes.Location = new Point(115, 161);
+            this.Controls.Add(lblTicketsTimes);
+
+            //Bouton plus
+            Button btnPlus = new Button();
+            btnPlus.Text = "+";
+            btnPlus.Size = new Size(48, 46);
+            btnPlus.Location = new Point(150, 140);
+            this.Controls.Add(btnPlus);
+        }*/
+
 
         #region Footer
 
@@ -92,7 +122,7 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            Controller.ShowTicketsSelectionFromTypeOfRate();
+            Controller.ShowTicketPriceFromOrderResume();
         }
 
         /// <summary>
@@ -112,7 +142,7 @@ namespace P_UX.Controller
         /// </summary>
         /// <param name="resManagerTraduction"></param>
         public void ChangeLanguageOfControls(ResourceManager resManagerTraduction)
-        { 
+        {
             foreach (Control control in Controls)
             {
                 if (resManagerTraduction.GetString(control.Name) != null)
@@ -125,27 +155,67 @@ namespace P_UX.Controller
         #endregion
 
         /// <summary>
-        /// Affiche les prix du billet selectionné en plein tarif
+        /// Affiche les infos du billets sur le résumé de commande
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnFullFare_Click(object sender, EventArgs e)
+        private void OrderResume_Activated(object sender, EventArgs e)
         {
-            Controller.isFullPrice = true;
-
-            Controller.ShowTicketsPrice(true);
+            UpdateOrderInfos();
         }
 
         /// <summary>
-        /// Affiche les prix du billet selectionné en demi tarif
+        /// Ajoute un ticket de plus à la commande
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnHalfFare_Click(object sender, EventArgs e)
+        private void btnPlus_Click(object sender, EventArgs e)
         {
-            Controller.isFullPrice = false;
+            Controller.TicketTimesWanted++;
 
-            Controller.ShowTicketsPrice(false);
+            UpdateOrderInfos();
+        }
+
+        /// <summary>
+        /// Met à jour les infos de la commande
+        /// </summary>
+        private void UpdateOrderInfos()
+        {
+            //Nb de ticket
+            lblNbrTimesTicketsInNbr.Text = Convert.ToString(Controller.TicketTimesWanted);
+
+            //Nom du billet
+            lblTicketTitle.Text = Controller.NameTicketSelected;
+
+            //Nom du tarif (plein / demi-tarif)
+            lblTicketTarif.Text = Controller.ReturnTarif();
+
+            //Prix du billet selon le nbr de fois
+            lblTicketPrice.Text = Convert.ToString(Math.Round(Controller.PriceTicketSelected * Controller.TicketTimesWanted, 2));
+
+            //Prix total de la commande
+            lblTotalToPayInEuro.Text = lblTicketPrice.Text;
+
+            if (Convert.ToInt32(lblNbrTimesTicketsInNbr.Text) <= 0)
+            {
+                //Remet le nombre de ticket voulu à 1
+                Controller.TicketTimesWanted = _MINIMUM_NBR_TICKETS_TO_ORDER;
+
+                //Affiche un message d'erreur
+                MessageBox.Show("Le nombre de billet ne peut être inférieur à 1", "Nombre de billet invalide");
+            }
+        }
+
+        /// <summary>
+        /// Retire un billet de la commande
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            Controller.TicketTimesWanted--;
+
+            UpdateOrderInfos();
         }
     }
 }

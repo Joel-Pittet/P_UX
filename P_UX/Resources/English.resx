@@ -120,6 +120,9 @@
   <data name="btnAddTickets" xml:space="preserve">
     <value>Buy</value>
   </data>
+  <data name="btnBuyOtherTickets" xml:space="preserve">
+    <value>Buy other tickets</value>
+  </data>
   <data name="btnBuyTickets" xml:space="preserve">
     <value>Buy Tickets</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="btnFullFare" xml:space="preserve">
     <value>Full fare</value>
+  </data>
+  <data name="btnGoPay" xml:space="preserve">
+    <value>Proceed to payment</value>
   </data>
   <data name="btnHalfFare" xml:space="preserve">
     <value>Half fare</value>
@@ -180,13 +186,31 @@
   <data name="btnTwice" xml:space="preserve">
     <value>2 tickets</value>
   </data>
+  <data name="lblAmount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
   <data name="lblChoseNbrTickets" xml:space="preserve">
     <value>Insert the number of tickets you want</value>
+  </data>
+  <data name="lblNbrTickets" xml:space="preserve">
+    <value>Number of tickets</value>
+  </data>
+  <data name="lblRate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="lblTitleOrderResume" xml:space="preserve">
+    <value>Summary of the order</value>
   </data>
   <data name="lblTitleTicketPrices" xml:space="preserve">
     <value>Choose the number of tickets you want</value>
   </data>
+  <data name="lblTitleTickets" xml:space="preserve">
+    <value>Title</value>
+  </data>
   <data name="lblTitleTicketsSelection" xml:space="preserve">
     <value>Make your choice</value>
+  </data>
+  <data name="lblTotalToPay" xml:space="preserve">
+    <value>Total amount to pay</value>
   </data>
 </root>

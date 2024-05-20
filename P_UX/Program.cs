@@ -32,11 +32,14 @@ namespace P_UX
             //Prix du ticket
             TicketPrices aTicketPrices = new TicketPrices();
 
+            //Résumé de la commande
+            OrderResume aOrderResume = new OrderResume();
+
             //Création du modele
             Model.Model aModel = new Model.Model();
 
             //Création du controller
-            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aModel);
+            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aOrderResume, aModel);
 
             //Lance la vue principale
             Application.Run(aMainView);
