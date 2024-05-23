@@ -169,7 +169,7 @@
     <value>    Ticket Airport                                   Roissy-Charles de Gaulles, Orly</value>
   </data>
   <data name="btnTicketDisney" xml:space="preserve">
-    <value>    Ticket Disneyland Paris                Valid from this station</value>
+    <value>    Ticket Disneyland Paris                  Valid from this station</value>
   </data>
   <data name="btnTicketMobilis" xml:space="preserve">
     <value>    Ticket Mobilis                                   1 day without airport access</value>

@@ -35,11 +35,14 @@ namespace P_UX
             //Résumé de la commande
             OrderResume aOrderResume = new OrderResume();
 
+            //Paris visite
+            ParisVisit aParisVisit = new ParisVisit();
+
             //Création du modele
             Model.Model aModel = new Model.Model();
 
             //Création du controller
-            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aOrderResume, aModel);
+            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aOrderResume, aParisVisit, aModel);
 
             //Lance la vue principale
             Application.Run(aMainView);

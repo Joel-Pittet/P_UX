@@ -205,7 +205,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Billete de aeropuerto                        Roissy-Charles de Gaulles, Orly.
+        ///   Recherche une chaîne localisée semblable à     Billete de aeropuerto                       Roissy-Charles de Gaulles, Orly.
         /// </summary>
         internal static string btnTicketAirport {
             get {
@@ -223,7 +223,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Billete Mobilis                                    1 día sin acceso al aeropuerto.
+        ///   Recherche une chaîne localisée semblable à     Billete Mobilis                                       1 día sin acceso al aeropuerto.
         /// </summary>
         internal static string btnTicketMobilis {
             get {
@@ -232,7 +232,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Billete para Paris Region                   Válido desde esta estación.
+        ///   Recherche une chaîne localisée semblable à     Billete para Paris Region                  Válido desde esta estación.
         /// </summary>
         internal static string btnTicketParisRegion {
             get {
@@ -241,7 +241,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Billete Paris Visita                              1,2,3 o 5 días.
+        ///   Recherche une chaîne localisée semblable à     Billete Paris Visita                               1,2,3 o 5 días.
         /// </summary>
         internal static string btnTicketParisVisit {
             get {
@@ -250,7 +250,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Billete t+                                             Metro, Bus, Tram, RER en Paris.
+        ///   Recherche une chaîne localisée semblable à     Billete t+                                              Metro, Bus, Tram, RER en Paris.
         /// </summary>
         internal static string btnTicketT {
             get {

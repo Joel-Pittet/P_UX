@@ -19,20 +19,19 @@ namespace P_UX.Views
         public Controller.Controller Controller { get; set; }
 
         //Texte de base des boutons
-        string btnOne = "";
-        string btnTwo = "";
-        string btnThree = "";
-        string btnFour = "";
-
-        string btnFive = "";
-        string btnSix = "";
-        string btnSeven = "";
-        string btnHeight = "";
+        private string _btnOne = "";
+        private string _btnTwo = "";
+        private string _btnThree = "";
+        private string _btnFour = "";
+        private string _btnFive = "";
+        private string _btnSix = "";
+        private string _btnSeven = "";
+        private string _btnHeight = "";
 
         /// <summary>
         /// Prix courant du billet selon tarif et type de billets
         /// </summary>
-        double actualPrice;
+        private double _actualPrice;
 
         /// <summary>
         /// Constructeur par défaut
@@ -54,7 +53,7 @@ namespace P_UX.Views
         {
             int nbTicketsWanted = Convert.ToInt32(txtBxNbrTickets.Text);
 
-            double priceTxtBx = actualPrice * nbTicketsWanted;
+            double priceTxtBx = _actualPrice * nbTicketsWanted;
 
             lblPriceTxtBx.Text = Convert.ToString(Math.Round(priceTxtBx, 2));
         }
@@ -67,14 +66,14 @@ namespace P_UX.Views
         {
             if (isFullPrice)
             {
-                actualPrice = Controller.ReturnFullPrice();
+                _actualPrice = Controller.ReturnFullPrice();
 
                 UpdateBtnNameWithPrices();
 
             }
             else
             {
-                actualPrice = Controller.CalculateTicketPriceHalfFare();
+                _actualPrice = Controller.CalculateTicketPriceHalfFare();
 
                 UpdateBtnNameWithPrices();
             }
@@ -85,14 +84,14 @@ namespace P_UX.Views
         /// </summary>
         private void UpdateBtnNameWithPrices()
         {
-            btnOnce.Text = btnOnce.Text + $"  ({Math.Round(actualPrice, 2)} €)";
-            btnTwice.Text = btnTwice.Text + $"  ({Math.Round(actualPrice * 2, 2)} €)";
-            btnThreeTimes.Text = btnThreeTimes.Text + $"  ({Math.Round(actualPrice * 3, 2)} €)";
-            btnFourTimes.Text = btnFourTimes.Text + $"  ({Math.Round(actualPrice * 4, 2)} €)";
-            btnFiveTimes.Text = btnFiveTimes.Text + $"  ({Math.Round(actualPrice * 5, 2)} €)";
-            btnSixTimes.Text = btnSixTimes.Text + $"  ({Math.Round(actualPrice * 6, 2)} €)";
-            btnSevenTimes.Text = btnSevenTimes.Text + $"  ({Math.Round(actualPrice * 7, 2)} €)";
-            btnHeightTimes.Text = btnHeightTimes.Text + $"  ({Math.Round(actualPrice * 8, 2)} €)";
+            btnOnce.Text = btnOnce.Text + $"  ({Math.Round(_actualPrice, 2)} €)";
+            btnTwice.Text = btnTwice.Text + $"  ({Math.Round(_actualPrice * 2, 2)} €)";
+            btnThreeTimes.Text = btnThreeTimes.Text + $"  ({Math.Round(_actualPrice * 3, 2)} €)";
+            btnFourTimes.Text = btnFourTimes.Text + $"  ({Math.Round(_actualPrice * 4, 2)} €)";
+            btnFiveTimes.Text = btnFiveTimes.Text + $"  ({Math.Round(_actualPrice * 5, 2)} €)";
+            btnSixTimes.Text = btnSixTimes.Text + $"  ({Math.Round(_actualPrice * 6, 2)} €)";
+            btnSevenTimes.Text = btnSevenTimes.Text + $"  ({Math.Round(_actualPrice * 7, 2)} €)";
+            btnHeightTimes.Text = btnHeightTimes.Text + $"  ({Math.Round(_actualPrice * 8, 2)} €)";
         }
 
 
@@ -101,15 +100,15 @@ namespace P_UX.Views
         /// </summary>
         public void GetBaseNameBtn()
         {
-            btnOne = btnOnce.Text;
-            btnTwo = btnTwice.Text;
-            btnThree = btnThreeTimes.Text;
-            btnFour = btnFourTimes .Text;
+            _btnOne = btnOnce.Text;
+            _btnTwo = btnTwice.Text;
+            _btnThree = btnThreeTimes.Text;
+            _btnFour = btnFourTimes .Text;
 
-            btnFive = btnFiveTimes .Text;
-            btnSix = btnSixTimes .Text;
-            btnSeven = btnSevenTimes .Text;
-            btnHeight = btnHeightTimes.Text;
+            _btnFive = btnFiveTimes .Text;
+            _btnSix = btnSixTimes .Text;
+            _btnSeven = btnSevenTimes .Text;
+            _btnHeight = btnHeightTimes.Text;
         }
 
         /// <summary>
@@ -117,14 +116,14 @@ namespace P_UX.Views
         /// </summary>
         public void ResetBtnName()
         {
-            btnOnce.Text = btnOne;
-            btnTwice.Text = btnTwo;
-            btnThreeTimes.Text = btnThree;
-            btnFourTimes.Text = btnFour;
-            btnFiveTimes.Text = btnFive;
-            btnSixTimes.Text = btnSix;
-            btnSevenTimes.Text = btnSeven;
-            btnHeightTimes.Text = btnHeight;
+            btnOnce.Text = _btnOne;
+            btnTwice.Text = _btnTwo;
+            btnThreeTimes.Text = _btnThree;
+            btnFourTimes.Text = _btnFour;
+            btnFiveTimes.Text = _btnFive;
+            btnSixTimes.Text = _btnSix;
+            btnSevenTimes.Text = _btnSeven;
+            btnHeightTimes.Text = _btnHeight;
         }
 
         #region Footer
@@ -263,7 +262,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnOnce_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, 1);
+            Controller.ShowOrderResume(_actualPrice, 1);
         }
 
         /// <summary>
@@ -273,7 +272,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnTwice_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, 2);
+            Controller.ShowOrderResume(_actualPrice, 2);
         }
 
         /// <summary>
@@ -283,7 +282,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnThreeTimes_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, 3);
+            Controller.ShowOrderResume(_actualPrice, 3);
         }
 
         /// <summary>
@@ -293,7 +292,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnFourTimes_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, 4);
+            Controller.ShowOrderResume(_actualPrice, 4);
         }
 
         /// <summary>
@@ -303,7 +302,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnFiveTimes_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, 5);
+            Controller.ShowOrderResume(_actualPrice, 5);
         }
 
         /// <summary>
@@ -313,7 +312,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnSixTimes_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, 6);
+            Controller.ShowOrderResume(_actualPrice, 6);
         }
 
         /// <summary>
@@ -323,7 +322,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnSevenTimes_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, 7);
+            Controller.ShowOrderResume(_actualPrice, 7);
         }
 
         /// <summary>
@@ -333,7 +332,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnHeightTimes_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, 8);
+            Controller.ShowOrderResume(_actualPrice, 8);
         }
 
         /// <summary>
@@ -343,7 +342,7 @@ namespace P_UX.Views
         /// <param name="e"></param>
         private void btnAddTickets_Click(object sender, EventArgs e)
         {
-            Controller.ShowOrderResume(actualPrice, Convert.ToInt32(txtBxNbrTickets.Text));
+            Controller.ShowOrderResume(_actualPrice, Convert.ToInt32(txtBxNbrTickets.Text));
         }
     }
 }

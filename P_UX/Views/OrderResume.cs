@@ -217,5 +217,16 @@ namespace P_UX.Controller
 
             UpdateOrderInfos();
         }
+
+        /// <summary>
+        /// Affiche la séléction des tickets depuis le résumé de commande
+        /// Dans le cas ou l'utilisateur voudrait un autre ticket
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnBuyOtherTickets_Click(object sender, EventArgs e)
+        {
+            Controller.ShowticketSelectionFromResumeOrder();
+        }
     }
 }

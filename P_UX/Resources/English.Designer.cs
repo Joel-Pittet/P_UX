@@ -214,7 +214,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à     Ticket Disneyland Paris                Valid from this station.
+        ///   Recherche une chaîne localisée semblable à     Ticket Disneyland Paris                  Valid from this station.
         /// </summary>
         internal static string btnTicketDisney {
             get {

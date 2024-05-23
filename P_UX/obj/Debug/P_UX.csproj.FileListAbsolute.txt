@@ -34,3 +34,5 @@ D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.ex
 D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.pdb
 D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Views.TicketPrices.resources
 D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Controller.OrderResume.resources
+D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Views.ParisVisit.resources
+D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Controller.PaymentOptions.resources

@@ -24,6 +24,7 @@ namespace P_UX.Controller
         private TypeOfRate _typeOfRate;
         private TicketPrices _ticketPrices;
         private OrderResume _orderResume;
+        private ParisVisit _parisVisit;
 
         //Gère l'internationalisation
         private ResourceManager _resManagerTraduction;
@@ -123,11 +124,16 @@ namespace P_UX.Controller
         }
 
         /// <summary>
+        /// Nom du bouton par rapport au billet sélectionné pour géréer la differenc d'affichage entre billet standart et spéciaux
+        /// </summary>
+        private string _buttonName;
+
+        /// <summary>
         /// Controleur
         /// </summary>
         /// <param name="view"></param>
         /// <param name="model"></param>
-        public Controller(MainView view, TicketsSelection ticketsSelection, TypeOfRate typeOfRate, TicketPrices ticketPrices, OrderResume orderResume, Model.Model model)
+        public Controller(MainView view, TicketsSelection ticketsSelection, TypeOfRate typeOfRate, TicketPrices ticketPrices, OrderResume orderResume, ParisVisit parisVisite, Model.Model model)
         {
             _mainView = view;
             _model = model;
@@ -135,7 +141,9 @@ namespace P_UX.Controller
             _typeOfRate = typeOfRate;
             _ticketPrices = ticketPrices;
             _orderResume = orderResume;
+            _parisVisit = parisVisite;
 
+            _parisVisit.Controller = this;
             _orderResume.Controller = this;
             _ticketPrices.Controller = this;
             _typeOfRate.Controller = this;
@@ -150,7 +158,7 @@ namespace P_UX.Controller
         /// </summary>
         /// <param name="langue"></param>
         /// <returns></returns>
-        public ResourceManager SwitchCurrentLanguage(Language language)
+        public void SwitchCurrentLanguage(Language language)
         {
             _currentLanguage = language;
 
@@ -177,8 +185,6 @@ namespace P_UX.Controller
             }
 
             UpdateLanguageAllView();
-
-            return _resManagerTraduction;
         }
 
         /// <summary>
@@ -233,9 +239,12 @@ namespace P_UX.Controller
 
         /// <summary>
         /// Affiche la vue des tarifs et récupère le prix du billet seléctionné
+        /// Récupère le nom du bouton séléctionné
         /// </summary>
         public void ShowTypeOfRate(string nameOfButton)
         {
+            _buttonName = nameOfButton;
+
             _model.FullPriceTicketSelectioned = GetTicketFullPrice(nameOfButton);
 
             ChangeForm(_ticketsSelection, _typeOfRate);
@@ -254,9 +263,17 @@ namespace P_UX.Controller
         /// </summary>
         public void ShowTicketsPrice(bool isFullPrice)
         {
-            _ticketPrices.ShowTicketPriceOnBtn(isFullPrice);
+           
+            if (_buttonName == "btnTicketParisVisit")
+            {
+                ChangeForm(_typeOfRate, _parisVisit);
+            }
+            else
+            {
+                _ticketPrices.ShowTicketPriceOnBtn(isFullPrice);
+                ChangeForm(_typeOfRate, _ticketPrices);
+            }
 
-            ChangeForm(_typeOfRate, _ticketPrices);
         }
 
         /// <summary>
@@ -265,6 +282,30 @@ namespace P_UX.Controller
         public void ShowTicketPriceFromOrderResume()
         {
             ChangeForm(_orderResume, _ticketPrices);
+        }
+
+        /// <summary>
+        /// Affiche la vue de résumé de la commande depuis la vue du Paris Visite
+        /// </summary>
+        public void ShowResumeOrderFromParisVisit()
+        {
+            ChangeForm(_parisVisit, _orderResume);
+        }
+
+        /// <summary>
+        /// Affiche la séléction des tickets depuis le résumé de commande
+        /// </summary>
+        public void ShowticketSelectionFromResumeOrder()
+        {
+            ChangeForm(_orderResume, _ticketsSelection);
+        }
+
+        /// <summary>
+        /// Affiche la selection des
+        /// </summary>
+        public void ShowTypeOfRateFromParisVisit()
+        {
+            ChangeForm(_parisVisit, _typeOfRate);
         }
 
         /// <summary>

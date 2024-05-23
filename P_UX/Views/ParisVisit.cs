@@ -9,9 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P_UX
+namespace P_UX.Views
 {
-    public partial class TicketsSelection : Form
+    public partial class ParisVisit : Form
     {
         /// <summary>
         /// Controller par défaut
@@ -19,90 +19,23 @@ namespace P_UX
         public Controller.Controller Controller { get; set; }
 
         /// <summary>
-        /// Constructeur par défaut
+        /// Constructeur
         /// </summary>
-        public TicketsSelection()
+        public ParisVisit()
         {
             InitializeComponent();
         }
 
-        #region Tickets Disponibles
-
         /// <summary>
-        /// Affiche la vue des tarifs
+        /// Affiche la vue du résumé de la commande depuis Paris visite
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnTicketT_Click(object sender, EventArgs e)
+        private void btnAddToOrder_Click(object sender, EventArgs e)
         {
-            Controller.NameTicketSelected = "Billet t+";
-
-            Controller.ShowTypeOfRate(btnTicketT.Name);
+            Controller.ShowResumeOrderFromParisVisit();
         }
 
-        /// <summary>
-        /// Affiche la vue des tarifs
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnTicketParisRegion_Click(object sender, EventArgs e)
-        {
-            Controller.NameTicketSelected = "Billet Paris Region";
-
-            Controller.ShowTypeOfRate(btnTicketParisRegion.Name);
-        }
-
-        /// <summary>
-        /// Affiche la vue des tarifs
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnTicketDisney_Click(object sender, EventArgs e)
-        {
-            Controller.NameTicketSelected = "Billet Disneyland Paris";
-
-            Controller.ShowTypeOfRate(btnTicketDisney.Name);
-        }
-
-        /// <summary>
-        /// Affiche la vue des tarifs
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnTicketParisVisit_Click(object sender, EventArgs e)
-        {
-            Controller.NameTicketSelected = "Billet Paris Visite";
-
-            Controller.ShowTypeOfRate(btnTicketParisVisit.Name);
-        }
-
-
-        /// <summary>
-        /// Affiche la vue des tarifs
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnTicketAirport_Click(object sender, EventArgs e)
-        {
-            Controller.NameTicketSelected = "Billet Aéroport";
-
-            Controller.ShowTypeOfRate(btnTicketAirport.Name);
-        }
-
-        /// <summary>
-        /// Affiche la vue des tarifs
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnTicketMobilis_Click(object sender, EventArgs e)
-        {
-            Controller.NameTicketSelected = "Billet Mobilis";
-
-            Controller.ShowTypeOfRate(btnTicketMobilis.Name);
-        }
-
-
-        #endregion
 
         #region Footer
 
@@ -136,6 +69,7 @@ namespace P_UX
         private void btnESP_Click(object sender, EventArgs e)
         {
             Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.ESP);
+
         }
 
         /// <summary>
@@ -146,6 +80,7 @@ namespace P_UX
         private void btnDEU_Click(object sender, EventArgs e)
         {
             Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.DEU);
+
         }
 
         /// <summary>
@@ -156,21 +91,12 @@ namespace P_UX
         private void btnITA_Click(object sender, EventArgs e)
         {
             Controller.SwitchCurrentLanguage(P_UX.Controller.Controller.Language.ITA);
+
         }
 
         #endregion
 
         #region Bouton retour et annuler
-
-        /// <summary>
-        /// Bouton retour, affiche la page principale
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnReturn_Click(object sender, EventArgs e)
-        {
-            Controller.ShowMainView();
-        }
 
         /// <summary>
         /// Affiche la page principale
@@ -182,6 +108,16 @@ namespace P_UX
             Controller.CancelButton(this);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            Controller.ShowTypeOfRateFromParisVisit();
+        }
+
         #endregion
 
         /// <summary>
@@ -189,7 +125,8 @@ namespace P_UX
         /// </summary>
         /// <param name="resManagerTraduction"></param>
         public void ChangeLanguageOfControls(ResourceManager resManagerTraduction)
-        { 
+        {
+
             foreach (Control control in Controls)
             {
                 if (resManagerTraduction.GetString(control.Name) != null)

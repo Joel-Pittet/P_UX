@@ -47,11 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Views\PaymentOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PaymentOptions.Designer.cs">
+      <DependentUpon>PaymentOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\OrderResume.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\OrderResume.Designer.cs">
       <DependentUpon>OrderResume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ParisVisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ParisVisit.Designer.cs">
+      <DependentUpon>ParisVisit.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\TicketPrices.cs">
       <SubType>Form</SubType>
@@ -110,8 +122,14 @@
     <Compile Include="Views\TicketsSelection.Designer.cs">
       <DependentUpon>TicketsSelection.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\PaymentOptions.resx">
+      <DependentUpon>PaymentOptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\OrderResume.resx">
       <DependentUpon>OrderResume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ParisVisit.resx">
+      <DependentUpon>ParisVisit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TicketPrices.resx">
       <DependentUpon>TicketPrices.cs</DependentUpon>
