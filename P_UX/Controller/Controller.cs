@@ -25,6 +25,7 @@ namespace P_UX.Controller
         private TicketPrices _ticketPrices;
         private OrderResume _orderResume;
         private ParisVisit _parisVisit;
+        private PaymentOptions _paymentOptions;
 
         //Gère l'internationalisation
         private ResourceManager _resManagerTraduction;
@@ -35,7 +36,7 @@ namespace P_UX.Controller
         public enum Language { FRA, ENG, ESP, DEU, ITA }
 
         /// <summary>
-        /// Langue courante index de l'enum
+        /// Langue courante
         /// </summary>
         private Language _currentLanguage = Language.FRA;
 
@@ -129,11 +130,12 @@ namespace P_UX.Controller
         private string _buttonName;
 
         /// <summary>
-        /// Controleur
+        /// Constructeur
         /// </summary>
         /// <param name="view"></param>
         /// <param name="model"></param>
-        public Controller(MainView view, TicketsSelection ticketsSelection, TypeOfRate typeOfRate, TicketPrices ticketPrices, OrderResume orderResume, ParisVisit parisVisite, Model.Model model)
+        public Controller(MainView view, TicketsSelection ticketsSelection, TypeOfRate typeOfRate, TicketPrices ticketPrices, 
+                            OrderResume orderResume, ParisVisit parisVisite, PaymentOptions paymentOptions, Model.Model model)
         {
             _mainView = view;
             _model = model;
@@ -142,7 +144,10 @@ namespace P_UX.Controller
             _ticketPrices = ticketPrices;
             _orderResume = orderResume;
             _parisVisit = parisVisite;
+            _paymentOptions = paymentOptions;
 
+
+            _paymentOptions.Controller = this;
             _parisVisit.Controller = this;
             _orderResume.Controller = this;
             _ticketPrices.Controller = this;
@@ -197,6 +202,7 @@ namespace P_UX.Controller
             _typeOfRate.ChangeLanguageOfControls(_resManagerTraduction);
             _ticketPrices.ChangeLanguageOfControls(_resManagerTraduction);
             _orderResume.ChangeLanguageOfControls (_resManagerTraduction);
+            _parisVisit.ChangeLanguageOfControls(_resManagerTraduction);
         }
 
 
@@ -318,6 +324,14 @@ namespace P_UX.Controller
             _ticketTimesWanted = timesWanted;
 
             ChangeForm(_ticketPrices, _orderResume);
+        }
+
+        /// <summary>
+        /// Affiche les options de paiement après le résumé de la commande
+        /// </summary>
+        public void ShowPaymentOptions()
+        {
+            ChangeForm(_orderResume, _paymentOptions);
         }
 
         #endregion

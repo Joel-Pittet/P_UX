@@ -38,11 +38,14 @@ namespace P_UX
             //Paris visite
             ParisVisit aParisVisit = new ParisVisit();
 
+            //Moyens de paiement
+            PaymentOptions aPaymentOptions = new PaymentOptions();
+
             //Création du modele
             Model.Model aModel = new Model.Model();
 
             //Création du controller
-            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aOrderResume, aParisVisit, aModel);
+            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aOrderResume, aParisVisit, aPaymentOptions, aModel);
 
             //Lance la vue principale
             Application.Run(aMainView);

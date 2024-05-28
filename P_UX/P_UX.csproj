@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Views\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\PaymentOptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +129,9 @@
     <Compile Include="Views\TicketsSelection.Designer.cs">
       <DependentUpon>TicketsSelection.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PaymentOptions.resx">
       <DependentUpon>PaymentOptions.cs</DependentUpon>
     </EmbeddedResource>

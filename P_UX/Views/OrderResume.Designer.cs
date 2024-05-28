@@ -146,18 +146,19 @@
             // 
             this.btnGoPay.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGoPay.Location = new System.Drawing.Point(23, 465);
-            this.btnGoPay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGoPay.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoPay.Name = "btnGoPay";
             this.btnGoPay.Size = new System.Drawing.Size(1032, 75);
             this.btnGoPay.TabIndex = 20;
             this.btnGoPay.Text = "Procéder au paiement";
             this.btnGoPay.UseVisualStyleBackColor = true;
+            this.btnGoPay.Click += new System.EventHandler(this.btnGoPay_Click);
             // 
             // btnBuyOtherTickets
             // 
             this.btnBuyOtherTickets.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuyOtherTickets.Location = new System.Drawing.Point(23, 385);
-            this.btnBuyOtherTickets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuyOtherTickets.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuyOtherTickets.Name = "btnBuyOtherTickets";
             this.btnBuyOtherTickets.Size = new System.Drawing.Size(1032, 75);
             this.btnBuyOtherTickets.TabIndex = 21;
@@ -224,7 +225,7 @@
             // 
             this.btnMinus.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinus.Location = new System.Drawing.Point(41, 141);
-            this.btnMinus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMinus.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(36, 37);
             this.btnMinus.TabIndex = 27;
@@ -236,7 +237,7 @@
             // 
             this.btnPlus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlus.Location = new System.Drawing.Point(148, 141);
-            this.btnPlus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlus.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(36, 37);
             this.btnPlus.TabIndex = 28;
@@ -350,7 +351,7 @@
             this.Controls.Add(this.btnESP);
             this.Controls.Add(this.btnFRA);
             this.Controls.Add(this.btnANG);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OrderResume";
             this.Text = "OrderResume";
             this.Activated += new System.EventHandler(this.OrderResume_Activated);

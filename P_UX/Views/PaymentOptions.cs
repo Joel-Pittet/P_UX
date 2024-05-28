@@ -12,9 +12,28 @@ namespace P_UX.Controller
 {
     public partial class PaymentOptions : Form
     {
+
+        /// <summary>
+        /// Controller par défaut
+        /// </summary>
+        public Controller Controller { get; set; }
+
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public PaymentOptions()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Bouton annuler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Controller.CancelButton(this);
         }
     }
 }

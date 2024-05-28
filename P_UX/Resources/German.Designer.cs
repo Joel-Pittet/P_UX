@@ -70,6 +70,15 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Zur Bestellung hinzufügen.
+        /// </summary>
+        internal static string btnAddToOrder {
+            get {
+                return ResourceManager.GetString("btnAddToOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Weitere Fahrkarten kaufen.
         /// </summary>
         internal static string btnBuyOtherTickets {
@@ -93,6 +102,15 @@ namespace P_UX.Resources {
         internal static string btnCancel {
             get {
                 return ResourceManager.GetString("btnCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 5 Tage.
+        /// </summary>
+        internal static string btnFiveDays {
+            get {
+                return ResourceManager.GetString("btnFiveDays", resourceCulture);
             }
         }
         
@@ -160,6 +178,15 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à 1 Tag.
+        /// </summary>
+        internal static string btnOneDay {
+            get {
+                return ResourceManager.GetString("btnOneDay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Navigo Pass aufladen.
         /// </summary>
         internal static string btnPassNavigo {
@@ -192,6 +219,15 @@ namespace P_UX.Resources {
         internal static string btnSixTimes {
             get {
                 return ResourceManager.GetString("btnSixTimes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 3 Tage.
+        /// </summary>
+        internal static string btnThreeDays {
+            get {
+                return ResourceManager.GetString("btnThreeDays", resourceCulture);
             }
         }
         
@@ -286,6 +322,42 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Vorname.
+        /// </summary>
+        internal static string lblCustomerFirstName {
+            get {
+                return ResourceManager.GetString("lblCustomerFirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Name.
+        /// </summary>
+        internal static string lblCustomerLastName {
+            get {
+                return ResourceManager.GetString("lblCustomerLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à vom.
+        /// </summary>
+        internal static string lblDateFrom {
+            get {
+                return ResourceManager.GetString("lblDateFrom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à bis.
+        /// </summary>
+        internal static string lblDateTo {
+            get {
+                return ResourceManager.GetString("lblDateTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Anzahl der Fahrkarten.
         /// </summary>
         internal static string lblNbrTickets {
@@ -304,11 +376,29 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Gültigkeit der Fahrkarte.
+        /// </summary>
+        internal static string lblTicketValidity {
+            get {
+                return ResourceManager.GetString("lblTicketValidity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Zusammenfassung der Bestellung.
         /// </summary>
         internal static string lblTitleOrderResume {
             get {
                 return ResourceManager.GetString("lblTitleOrderResume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fahrkarte Paris Besuch.
+        /// </summary>
+        internal static string lblTitleParisVisit {
+            get {
+                return ResourceManager.GetString("lblTitleParisVisit", resourceCulture);
             }
         }
         

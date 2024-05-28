@@ -120,6 +120,9 @@
   <data name="btnAddTickets" xml:space="preserve">
     <value>Comprar</value>
   </data>
+  <data name="btnAddToOrder" xml:space="preserve">
+    <value>Añadir al pedido</value>
+  </data>
   <data name="btnBuyOtherTickets" xml:space="preserve">
     <value>Comprar otros billetes</value>
   </data>
@@ -128,6 +131,9 @@
   </data>
   <data name="btnCancel" xml:space="preserve">
     <value>Anular</value>
+  </data>
+  <data name="btnFiveDays" xml:space="preserve">
+    <value>5 días</value>
   </data>
   <data name="btnFiveTimes" xml:space="preserve">
     <value>5 billetes</value>
@@ -150,6 +156,9 @@
   <data name="btnOnce" xml:space="preserve">
     <value>1 billete</value>
   </data>
+  <data name="btnOneDay" xml:space="preserve">
+    <value>1 día</value>
+  </data>
   <data name="btnPassNavigo" xml:space="preserve">
     <value>Recargar Navigo Pass</value>
   </data>
@@ -161,6 +170,9 @@
   </data>
   <data name="btnSixTimes" xml:space="preserve">
     <value>6 billetes</value>
+  </data>
+  <data name="btnThreeDays" xml:space="preserve">
+    <value>3 días</value>
   </data>
   <data name="btnThreeTimes" xml:space="preserve">
     <value>3 billetes</value>
@@ -192,14 +204,32 @@
   <data name="lblChoseNbrTickets" xml:space="preserve">
     <value>Indica el número de billetes deseados</value>
   </data>
+  <data name="lblCustomerFirstName" xml:space="preserve">
+    <value>Nombre de pila</value>
+  </data>
+  <data name="lblCustomerLastName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblDateFrom" xml:space="preserve">
+    <value>del</value>
+  </data>
+  <data name="lblDateTo" xml:space="preserve">
+    <value>al</value>
+  </data>
   <data name="lblNbrTickets" xml:space="preserve">
     <value>Número de billetes</value>
   </data>
   <data name="lblRate" xml:space="preserve">
     <value>Tarifa</value>
   </data>
+  <data name="lblTicketValidity" xml:space="preserve">
+    <value>Validez del billete</value>
+  </data>
   <data name="lblTitleOrderResume" xml:space="preserve">
     <value>Resumen de la orden</value>
+  </data>
+  <data name="lblTitleParisVisit" xml:space="preserve">
+    <value>Billete Paris Visita</value>
   </data>
   <data name="lblTitleTicketPrices" xml:space="preserve">
     <value>Elige el número de billetes que deseados</value>

@@ -228,5 +228,15 @@ namespace P_UX.Controller
         {
             Controller.ShowticketSelectionFromResumeOrder();
         }
+
+        /// <summary>
+        /// Affiche les options de paiement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnGoPay_Click(object sender, EventArgs e)
+        {
+            Controller.ShowPaymentOptions();
+        }
     }
 }
