@@ -106,6 +106,24 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Carta.
+        /// </summary>
+        internal static string btnCard {
+            get {
+                return ResourceManager.GetString("btnCard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Contanti.
+        /// </summary>
+        internal static string btnCash {
+            get {
+                return ResourceManager.GetString("btnCash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à 3 giorni.
         /// </summary>
         internal static string btnFiveDays {
@@ -304,6 +322,33 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Banconote accettate.
+        /// </summary>
+        internal static string lblAcceptedBills {
+            get {
+                return ResourceManager.GetString("lblAcceptedBills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Carte accettate.
+        /// </summary>
+        internal static string lblAcceptedCard {
+            get {
+                return ResourceManager.GetString("lblAcceptedCard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Monete accettate.
+        /// </summary>
+        internal static string lblAcceptedCoins {
+            get {
+                return ResourceManager.GetString("lblAcceptedCoins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Importo.
         /// </summary>
         internal static string lblAmount {
@@ -385,6 +430,15 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sceglie un metodo di pagamento.
+        /// </summary>
+        internal static string lblTitleOptionPayment {
+            get {
+                return ResourceManager.GetString("lblTitleOptionPayment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Sintesi dell&apos;ordine.
         /// </summary>
         internal static string lblTitleOrderResume {
@@ -399,6 +453,15 @@ namespace P_UX.Resources {
         internal static string lblTitleParisVisit {
             get {
                 return ResourceManager.GetString("lblTitleParisVisit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pagamento dell&apos;ordine.
+        /// </summary>
+        internal static string lblTitlePayment {
+            get {
+                return ResourceManager.GetString("lblTitlePayment", resourceCulture);
             }
         }
         
@@ -426,6 +489,15 @@ namespace P_UX.Resources {
         internal static string lblTitleTicketsSelection {
             get {
                 return ResourceManager.GetString("lblTitleTicketsSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Totale da pagare.
+        /// </summary>
+        internal static string lblTotalAmountToPay {
+            get {
+                return ResourceManager.GetString("lblTotalAmountToPay", resourceCulture);
             }
         }
         

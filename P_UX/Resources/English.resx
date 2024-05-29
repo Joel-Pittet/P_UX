@@ -132,6 +132,12 @@
   <data name="btnCancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="btnCard" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="btnCash" xml:space="preserve">
+    <value>Cash</value>
+  </data>
   <data name="btnFiveDays" xml:space="preserve">
     <value>5 days</value>
   </data>
@@ -198,6 +204,15 @@
   <data name="btnTwice" xml:space="preserve">
     <value>2 tickets</value>
   </data>
+  <data name="lblAcceptedBills" xml:space="preserve">
+    <value>Accepted Bills</value>
+  </data>
+  <data name="lblAcceptedCard" xml:space="preserve">
+    <value>Accepted cards</value>
+  </data>
+  <data name="lblAcceptedCoins" xml:space="preserve">
+    <value>Accepted Coins</value>
+  </data>
   <data name="lblAmount" xml:space="preserve">
     <value>Amount</value>
   </data>
@@ -225,11 +240,17 @@
   <data name="lblTicketValidity" xml:space="preserve">
     <value>Ticket validity</value>
   </data>
+  <data name="lblTitleOptionPayment" xml:space="preserve">
+    <value>Choose a payment method</value>
+  </data>
   <data name="lblTitleOrderResume" xml:space="preserve">
     <value>Summary of the order</value>
   </data>
   <data name="lblTitleParisVisit" xml:space="preserve">
     <value>Ticket Paris Visit</value>
+  </data>
+  <data name="lblTitlePayment" xml:space="preserve">
+    <value>Order payment</value>
   </data>
   <data name="lblTitleTicketPrices" xml:space="preserve">
     <value>Choose the number of tickets you want</value>
@@ -239,6 +260,9 @@
   </data>
   <data name="lblTitleTicketsSelection" xml:space="preserve">
     <value>Make your choice</value>
+  </data>
+  <data name="lblTotalAmountToPay" xml:space="preserve">
+    <value>Total to pay</value>
   </data>
   <data name="lblTotalToPay" xml:space="preserve">
     <value>Total amount to pay</value>

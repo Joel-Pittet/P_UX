@@ -132,6 +132,12 @@
   <data name="btnCancel" xml:space="preserve">
     <value>Abbrechen</value>
   </data>
+  <data name="btnCard" xml:space="preserve">
+    <value>Karte</value>
+  </data>
+  <data name="btnCash" xml:space="preserve">
+    <value>Bargeld</value>
+  </data>
   <data name="btnFiveDays" xml:space="preserve">
     <value>5 Tage</value>
   </data>
@@ -198,6 +204,15 @@
   <data name="btnTwice" xml:space="preserve">
     <value>2 Fahrkarten</value>
   </data>
+  <data name="lblAcceptedBills" xml:space="preserve">
+    <value>kzeptierte Banknoten</value>
+  </data>
+  <data name="lblAcceptedCard" xml:space="preserve">
+    <value>Akzeptierte Karten</value>
+  </data>
+  <data name="lblAcceptedCoins" xml:space="preserve">
+    <value>Akzeptierte Münzen</value>
+  </data>
   <data name="lblAmount" xml:space="preserve">
     <value>Betrag</value>
   </data>
@@ -225,11 +240,17 @@
   <data name="lblTicketValidity" xml:space="preserve">
     <value>Gültigkeit der Fahrkarte</value>
   </data>
+  <data name="lblTitleOptionPayment" xml:space="preserve">
+    <value>Wählen Sie eine Zahlungsart</value>
+  </data>
   <data name="lblTitleOrderResume" xml:space="preserve">
     <value>Zusammenfassung der Bestellung</value>
   </data>
   <data name="lblTitleParisVisit" xml:space="preserve">
     <value>Fahrkarte Paris Besuch</value>
+  </data>
+  <data name="lblTitlePayment" xml:space="preserve">
+    <value>Zahlung der Bestellung</value>
   </data>
   <data name="lblTitleTicketPrices" xml:space="preserve">
     <value>Anzahl der Fahrkarten</value>
@@ -240,7 +261,10 @@
   <data name="lblTitleTicketsSelection" xml:space="preserve">
     <value>Treffen Sie Ihre Entscheidung</value>
   </data>
+  <data name="lblTotalAmountToPay" xml:space="preserve">
+    <value>Zu zahlende Summe</value>
+  </data>
   <data name="lblTotalToPay" xml:space="preserve">
-    <value>Zu zahlender Gesamtbetrag</value>
+    <value>Zu zahlende Summe</value>
   </data>
 </root>

@@ -132,6 +132,12 @@
   <data name="btnCancel" xml:space="preserve">
     <value>Annuler</value>
   </data>
+  <data name="btnCard" xml:space="preserve">
+    <value>Carte</value>
+  </data>
+  <data name="btnCash" xml:space="preserve">
+    <value>Espèces</value>
+  </data>
   <data name="btnFiveDays" xml:space="preserve">
     <value>5 jours</value>
   </data>
@@ -145,7 +151,7 @@
     <value>Plein tarif</value>
   </data>
   <data name="btnGoPay" xml:space="preserve">
-    <value>Procéder au paiment</value>
+    <value>Procéder au paiement</value>
   </data>
   <data name="btnHalfFare" xml:space="preserve">
     <value>Tarif réduit</value>
@@ -198,6 +204,15 @@
   <data name="btnTwice" xml:space="preserve">
     <value>2 billets</value>
   </data>
+  <data name="lblAcceptedBills" xml:space="preserve">
+    <value>Billets acceptés</value>
+  </data>
+  <data name="lblAcceptedCard" xml:space="preserve">
+    <value>Cartes acceptées</value>
+  </data>
+  <data name="lblAcceptedCoins" xml:space="preserve">
+    <value>Pièces acceptées</value>
+  </data>
   <data name="lblAmount" xml:space="preserve">
     <value>Montant</value>
   </data>
@@ -225,11 +240,17 @@
   <data name="lblTicketValidity" xml:space="preserve">
     <value>Validité du billet</value>
   </data>
+  <data name="lblTitleOptionPayment" xml:space="preserve">
+    <value>Choisissez un moyen de paiement</value>
+  </data>
   <data name="lblTitleOrderResume" xml:space="preserve">
     <value>Résumé de la commande</value>
   </data>
   <data name="lblTitleParisVisit" xml:space="preserve">
     <value>Billet Paris Visite</value>
+  </data>
+  <data name="lblTitlePayment" xml:space="preserve">
+    <value>Paiement de la commande</value>
   </data>
   <data name="lblTitleTicketPrices" xml:space="preserve">
     <value>Choisissez le nombre de billets souhiatés</value>
@@ -239,6 +260,9 @@
   </data>
   <data name="lblTitleTicketsSelection" xml:space="preserve">
     <value>Faites votre choix</value>
+  </data>
+  <data name="lblTotalAmountToPay" xml:space="preserve">
+    <value>Total à payer</value>
   </data>
   <data name="lblTotalToPay" xml:space="preserve">
     <value>Total à payer</value>

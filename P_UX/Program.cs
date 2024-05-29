@@ -41,11 +41,14 @@ namespace P_UX
             //Moyens de paiement
             PaymentOptions aPaymentOptions = new PaymentOptions();
 
+            //Paiment final
+            Payment aPayment = new Payment();
+
             //Création du modele
             Model.Model aModel = new Model.Model();
 
             //Création du controller
-            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aOrderResume, aParisVisit, aPaymentOptions, aModel);
+            Controller.Controller aController = new Controller.Controller(aMainView, aTicketsSelection, aTypeOfRate, aTicketPrices, aOrderResume, aParisVisit, aPaymentOptions, aPayment, aModel);
 
             //Lance la vue principale
             Application.Run(aMainView);

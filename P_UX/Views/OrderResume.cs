@@ -236,6 +236,8 @@ namespace P_UX.Controller
         /// <param name="e"></param>
         private void btnGoPay_Click(object sender, EventArgs e)
         {
+            Controller.GetFinalOrderPrice(lblTotalToPayInEuro.Text);
+
             Controller.ShowPaymentOptions();
         }
     }

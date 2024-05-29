@@ -26,6 +26,7 @@ namespace P_UX.Controller
         private OrderResume _orderResume;
         private ParisVisit _parisVisit;
         private PaymentOptions _paymentOptions;
+        private Payment _payment;
 
         //Gère l'internationalisation
         private ResourceManager _resManagerTraduction;
@@ -130,12 +131,17 @@ namespace P_UX.Controller
         private string _buttonName;
 
         /// <summary>
+        /// Montant final de la commande
+        /// </summary>
+        private string _finalAmountToPay;
+
+        /// <summary>
         /// Constructeur
         /// </summary>
         /// <param name="view"></param>
         /// <param name="model"></param>
         public Controller(MainView view, TicketsSelection ticketsSelection, TypeOfRate typeOfRate, TicketPrices ticketPrices, 
-                            OrderResume orderResume, ParisVisit parisVisite, PaymentOptions paymentOptions, Model.Model model)
+                            OrderResume orderResume, ParisVisit parisVisite, PaymentOptions paymentOptions, Payment payment, Model.Model model)
         {
             _mainView = view;
             _model = model;
@@ -145,8 +151,9 @@ namespace P_UX.Controller
             _orderResume = orderResume;
             _parisVisit = parisVisite;
             _paymentOptions = paymentOptions;
+            _payment = payment;
 
-
+            _payment.Controller = this;
             _paymentOptions.Controller = this;
             _parisVisit.Controller = this;
             _orderResume.Controller = this;
@@ -203,6 +210,8 @@ namespace P_UX.Controller
             _ticketPrices.ChangeLanguageOfControls(_resManagerTraduction);
             _orderResume.ChangeLanguageOfControls (_resManagerTraduction);
             _parisVisit.ChangeLanguageOfControls(_resManagerTraduction);
+            _paymentOptions.ChangeLanguageOfControls(_resManagerTraduction);
+            _payment.ChangeLanguageOfControls(_resManagerTraduction);
         }
 
 
@@ -295,6 +304,10 @@ namespace P_UX.Controller
         /// </summary>
         public void ShowResumeOrderFromParisVisit()
         {
+            _ticketTimesWanted = 1;
+
+            _priceTicketSelected = _model.FullPriceTicketSelectioned;
+
             ChangeForm(_parisVisit, _orderResume);
         }
 
@@ -332,6 +345,30 @@ namespace P_UX.Controller
         public void ShowPaymentOptions()
         {
             ChangeForm(_orderResume, _paymentOptions);
+        }
+
+        /// <summary>
+        /// Affiche le résumé de la commande depuis les options de paiement
+        /// </summary>
+        public void ShowResumeOrderFromPaymentOptions()
+        {
+            ChangeForm(_paymentOptions, _orderResume);
+        }
+
+        /// <summary>
+        /// Affiche la vue du paiement
+        /// </summary>
+        public void ShowPayment()
+        {
+            ChangeForm(_paymentOptions, _payment);
+        }
+
+        /// <summary>
+        /// Affiche la vue des options de paiement depuis la vue du paiement
+        /// </summary>
+        public void ShowPaymentOptionFromPayment()
+        {
+            ChangeForm(_payment, _paymentOptions);
         }
 
         #endregion
@@ -398,6 +435,24 @@ namespace P_UX.Controller
             {
                 return "Demi-Tarif";
             }
+        }
+
+        /// <summary>
+        /// Récupère le prix total de la commande
+        /// </summary>
+        /// <param name="finalPrice"></param>
+        public void GetFinalOrderPrice(string finalPrice)
+        {
+            _finalAmountToPay = finalPrice;
+        }
+
+        /// <summary>
+        /// Retourne le montant total à payer
+        /// </summary>
+        /// <returns></returns>
+        public string ReturnFinalAmountToPay()
+        {
+            return _finalAmountToPay;
         }
     }
 }
