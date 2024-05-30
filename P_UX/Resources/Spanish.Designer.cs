@@ -457,7 +457,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Order payment.
+        ///   Recherche une chaîne localisée semblable à Pago de la orden.
         /// </summary>
         internal static string lblTitlePayment {
             get {
@@ -493,7 +493,7 @@ namespace P_UX.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Pago de la orden.
+        ///   Recherche une chaîne localisée semblable à Importe total a pagar.
         /// </summary>
         internal static string lblTotalAmountToPay {
             get {

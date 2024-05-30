@@ -250,7 +250,7 @@
     <value>Billete Paris Visita</value>
   </data>
   <data name="lblTitlePayment" xml:space="preserve">
-    <value>Order payment</value>
+    <value>Pago de la orden</value>
   </data>
   <data name="lblTitleTicketPrices" xml:space="preserve">
     <value>Elige el número de billetes que deseados</value>
@@ -262,7 +262,7 @@
     <value>Haga su elección</value>
   </data>
   <data name="lblTotalAmountToPay" xml:space="preserve">
-    <value>Pago de la orden</value>
+    <value>Importe total a pagar</value>
   </data>
   <data name="lblTotalToPay" xml:space="preserve">
     <value>Total a pagar</value>
