@@ -1,4 +1,9 @@
-﻿using System;
+﻿///Auteur: Joël Pittet
+///Date: 30.05.2024
+///Lieu: ETML - VENNES
+///Description: Model principal, contient les billets avec le nom auquel ils sont associés ainsi que le prix de chaque billet
+///
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -105,9 +110,6 @@ namespace P_UX.Model
                 _halfPrice = value;
             }
         }
-
-
-
 
         /// <summary>
         /// Constructeur

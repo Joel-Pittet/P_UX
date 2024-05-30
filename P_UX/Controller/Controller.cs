@@ -1,14 +1,13 @@
-﻿using P_UX.Model;
+﻿///Auteur: Joël Pittet
+///Date: 30.05.2024
+///Lieu: ETML - VENNES
+///Description: Controleur principal, gère I18N et les relations entre le model et les vues
+///
+
 using P_UX.Resources;
 using P_UX.Views;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using System.Resources;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 

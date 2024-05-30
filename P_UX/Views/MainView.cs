@@ -1,14 +1,11 @@
-﻿using P_UX.Controller;
+﻿///Auteur: Joël Pittet
+///Date: 30.05.2024
+///Lieu: ETML - VENNES
+///Description: Vue principale du projet avec choix entre Recharger le pass navigo et acheter des billets
+///
+
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P_UX

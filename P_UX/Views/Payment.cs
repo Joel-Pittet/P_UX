@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿///Auteur: Joël Pittet
+///Date: 30.05.2024
+///Lieu: ETML - VENNES
+///Description: Vue qui affiche le prix final à payer
+///
+
+using System;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P_UX.Views
@@ -17,7 +16,6 @@ namespace P_UX.Views
         /// Controller par défaut
         /// </summary>
         public Controller.Controller Controller { get; set; }
-
 
         /// <summary>
         /// Constructeur
