@@ -15,25 +15,3 @@ D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Ti
 D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Resources.English.resources
 D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.MainView.resources
 D:\FPA 2023-2025\1ère année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Controller.TypeOfRate.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\bin\Debug\P_UX.exe.config
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\bin\Debug\P_UX.exe
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\bin\Debug\P_UX.pdb
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.csproj.AssemblyReference.cache
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Views.Payment.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Controller.PaymentOptions.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Controller.OrderResume.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Views.ParisVisit.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Views.TicketPrices.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Controller.TypeOfRate.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Resources.English.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.MainView.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Properties.Resources.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Resources.French.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Resources.Spanish.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Resources.Italian.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.Resources.German.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.TicketsSelection.resources
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.csproj.GenerateResource.cache
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.csproj.CoreCompileInputs.cache
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.exe
-D:\FPA_2023-2025\1ère_année\Curchod\I120-UX\Projet\P_UX\P_UX\obj\Debug\P_UX.pdb
